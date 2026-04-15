@@ -1,0 +1,60 @@
+{
+  "documents": [
+    {
+      "doc_key": "owasp-sqli",
+      "title": "SQL Injection Prevention",
+      "category": "application-security",
+      "source_url": "https://owasp.org/www-community/attacks/SQL_Injection",
+      "content": "SQL injection happens when untrusted input is concatenated into SQL statements. Prevent it with parameterized queries, strict input validation, least-privilege database accounts, and safe ORM patterns. Never build queries with string interpolation for user input."
+    },
+    {
+      "doc_key": "owasp-xss",
+      "title": "Cross-Site Scripting Defense",
+      "category": "application-security",
+      "source_url": "https://owasp.org/www-community/attacks/xss/",
+      "content": "Cross-site scripting occurs when attacker-controlled content is rendered as active code in a browser. Prevent it with contextual output encoding, template auto-escaping, HTML sanitization for rich text, strict Content-Security-Policy, and safe DOM APIs that avoid innerHTML."
+    },
+    {
+      "doc_key": "owasp-csrf",
+      "title": "CSRF Mitigation Basics",
+      "category": "web-security",
+      "source_url": "https://owasp.org/www-community/attacks/csrf",
+      "content": "Cross-site request forgery abuses a victim browser's authenticated session to perform unwanted actions. Defend with anti-CSRF tokens, SameSite cookies, origin and referer validation where appropriate, and re-authentication for high-risk actions."
+    },
+    {
+      "doc_key": "security-headers",
+      "title": "Baseline Security Headers",
+      "category": "web-security",
+      "source_url": "https://owasp.org/www-project-secure-headers/",
+      "content": "A practical baseline includes Strict-Transport-Security, Content-Security-Policy, X-Content-Type-Options, Referrer-Policy, and either X-Frame-Options or CSP frame-ancestors. Review whether the Server header leaks unnecessary product detail."
+    },
+    {
+      "doc_key": "password-storage",
+      "title": "Secure Password Storage",
+      "category": "identity-security",
+      "source_url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html",
+      "content": "Store passwords only as salted adaptive hashes using algorithms such as Argon2id, scrypt, or bcrypt. Never store plaintext or reversible encryption for passwords. Tune work factors to the system and review them periodically."
+    },
+    {
+      "doc_key": "phishing-red-flags",
+      "title": "Phishing Red Flags",
+      "category": "email-security",
+      "source_url": "https://www.cisa.gov/topics/cybersecurity-best-practices",
+      "content": "Common phishing indicators include urgent requests, credential prompts, unexpected attachments, mismatched sender domains, payment pressure, and links that differ from their displayed text. Treat requests to bypass normal process as high risk."
+    },
+    {
+      "doc_key": "bruteforce-signals",
+      "title": "Brute Force Indicators",
+      "category": "log-analysis",
+      "source_url": "https://www.cisa.gov/",
+      "content": "Repeated authentication failures from one IP, impossible-travel logins, username spraying across many accounts, and rapid retry loops are common brute-force indicators. Mitigate with rate limits, MFA, account lockout strategy, and alerting."
+    },
+    {
+      "doc_key": "tls-review",
+      "title": "TLS Review Checklist",
+      "category": "network-security",
+      "source_url": "https://cheatsheetseries.owasp.org/",
+      "content": "Review certificate validity, issuer trust, SAN coverage, expiration window, protocol support, and whether HSTS is enabled. Expiring certificates, incomplete SANs, and legacy protocols are common operational weaknesses."
+    }
+  ]
+}

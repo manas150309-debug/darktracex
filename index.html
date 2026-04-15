@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DarkTraceX Console</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=16" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <main class="layout">
+      <aside class="sidebar">
+        <div class="brand-card panel">
+          <p class="kicker">DarkTraceX</p>
+          <h1>Defensive Cyber AI Console</h1>
+          <p class="lede">
+            Local-model defensive assistant with persistent memory, local knowledge, and security
+            analysis tools for developers and analysts.
+          </p>
+          <div class="brand-tags">
+            <span>Local AI</span>
+            <span>Local CVE</span>
+            <span>Threat Reports</span>
+          </div>
+        </div>
+
+        <div class="panel stat-panel">
+          <div class="panel-header">
+            <h2>Database</h2>
+            <button id="refresh-state" class="ghost-button" type="button">Sync</button>
+          </div>
+          <dl id="stats" class="stats-grid">
+            <div>
+              <dt>Conversations</dt>
+              <dd id="stat-conversations">0</dd>
+            </div>
+            <div>
+              <dt>Messages</dt>
+              <dd id="stat-messages">0</dd>
+            </div>
+            <div>
+              <dt>Notes</dt>
+              <dd id="stat-notes">0</dd>
+            </div>
+            <div>
+              <dt>Knowledge</dt>
+              <dd id="stat-knowledge">0</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Quick Memory</h2>
+          </div>
+          <form id="note-form" class="note-form">
+            <textarea
+              id="note-input"
+              rows="4"
+              placeholder="Store an internal note, procedure, hostname, or investigation detail..."
+            ></textarea>
+            <button class="action-button" type="submit">Save Note</button>
+          </form>
+          <div id="note-status" class="small-status">Idle</div>
+        </div>
+
+        <div class="panel guidance-panel">
+          <div class="panel-header">
+            <h2>Best Uses</h2>
+          </div>
+          <div class="guidance-list">
+            <article class="guidance-item">
+              <p class="guidance-title">Website Review</p>
+              <p class="guidance-copy">
+                Try `cyber analysis of google.com` or `create report for example.com`.
+              </p>
+            </article>
+            <article class="guidance-item">
+              <p class="guidance-title">Cyber Analysis Report</p>
+              <p class="guidance-copy">
+                Try `cyber analysis of example.com` or `create cyber analysis report for example.com`.
+              </p>
+            </article>
+            <article class="guidance-item">
+              <p class="guidance-title">CVE Lookup</p>
+              <p class="guidance-copy">Try `search CVE-2021-44228 in cve database`.</p>
+            </article>
+            <article class="guidance-item">
+              <p class="guidance-title">Code Safety</p>
+              <p class="guidance-copy">
+                Paste insecure code and ask for a secure fix or explanation.
+              </p>
+            </article>
+            <article class="guidance-item">
+              <p class="guidance-title">Phishing Check</p>
+              <p class="guidance-copy">Paste a message or email and ask if it is phishing.</p>
+            </article>
+          </div>
+        </div>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar panel">
+          <div>
+            <p class="kicker">Session Status</p>
+            <p class="status-line"><span id="chat-status">Ready</span></p>
+          </div>
+          <div class="topbar-actions">
+            <button id="export-md" class="ghost-button" type="button">Export MD</button>
+            <button id="export-json" class="ghost-button" type="button">Export JSON</button>
+            <button id="clear-chat" class="ghost-button" type="button">Clear</button>
+          </div>
+        </header>
+
+        <section class="workspace-card panel">
+          <div class="workspace-intro">
+            <p class="workspace-title">
+              Ask for analysis, reports, CVEs, code review, or phishing checks.
+            </p>
+            <p class="workspace-copy">
+              Results are kept local and shown in a simplified format with threat scoring and local
+              knowledge.
+            </p>
+          </div>
+          <section id="messages" class="messages" aria-live="polite"></section>
+        </section>
+
+        <section class="feed-grid">
+          <div class="panel mini-panel">
+            <div class="panel-header">
+              <h2>Threat Overview</h2>
+            </div>
+            <div id="threat-overview" class="threat-panel empty-state">
+              No URL threat report yet.
+            </div>
+          </div>
+          <div class="panel mini-panel">
+            <div class="panel-header">
+              <h2>Recent Notes</h2>
+            </div>
+            <div id="recent-notes" class="feed-list empty-state">No notes yet.</div>
+          </div>
+          <div class="panel mini-panel">
+            <div class="panel-header">
+              <h2>AI Insight</h2>
+            </div>
+            <div id="classifier-log" class="feed-list empty-state">No classifier output yet.</div>
+          </div>
+        </section>
+
+        <form id="composer" class="composer panel">
+          <label class="sr-only" for="prompt">Message</label>
+          <textarea
+            id="prompt"
+            name="prompt"
+            rows="2"
+            placeholder="Ask about a host, save knowledge, or request a defensive review..."
+            required
+          ></textarea>
+          <button class="action-button" type="submit">Transmit</button>
+        </form>
+      </section>
+    </main>
+
+    <template id="message-template">
+      <article class="message">
+        <div class="message-meta">
+          <span class="message-role"></span>
+        </div>
+        <p class="message-text"></p>
+      </article>
+    </template>
+
+    <template id="feed-item-template">
+      <article class="feed-item">
+        <p class="feed-item-title"></p>
+        <p class="feed-item-body"></p>
+      </article>
+    </template>
+
+    <script src="./app.js?v=16"></script>
+  </body>
+</html>

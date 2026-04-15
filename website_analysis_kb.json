@@ -1,0 +1,284 @@
+{
+  "documents": [
+    {
+      "doc_key": "website-analysis-missing-hsts-low-001",
+      "title": "Website Analysis Guide: Missing Hsts (Low)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Hsts\nSeverity lens: Low\nSummary: Missing HSTS reduces browser-side HTTPS enforcement.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-hsts-medium-002",
+      "title": "Website Analysis Guide: Missing Hsts (Medium)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Hsts\nSeverity lens: Medium\nSummary: Missing HSTS reduces browser-side HTTPS enforcement.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-hsts-high-003",
+      "title": "Website Analysis Guide: Missing Hsts (High)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Hsts\nSeverity lens: High\nSummary: Missing HSTS reduces browser-side HTTPS enforcement.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-hsts-critical-004",
+      "title": "Website Analysis Guide: Missing Hsts (Critical)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Hsts\nSeverity lens: Critical\nSummary: Missing HSTS reduces browser-side HTTPS enforcement.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-csp-low-005",
+      "title": "Website Analysis Guide: Missing Csp (Low)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Csp\nSeverity lens: Low\nSummary: Missing Content-Security-Policy weakens browser-side script restrictions.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-csp-medium-006",
+      "title": "Website Analysis Guide: Missing Csp (Medium)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Csp\nSeverity lens: Medium\nSummary: Missing Content-Security-Policy weakens browser-side script restrictions.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-csp-high-007",
+      "title": "Website Analysis Guide: Missing Csp (High)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Csp\nSeverity lens: High\nSummary: Missing Content-Security-Policy weakens browser-side script restrictions.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-csp-critical-008",
+      "title": "Website Analysis Guide: Missing Csp (Critical)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Csp\nSeverity lens: Critical\nSummary: Missing Content-Security-Policy weakens browser-side script restrictions.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-xcto-low-009",
+      "title": "Website Analysis Guide: Missing Xcto (Low)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Xcto\nSeverity lens: Low\nSummary: Missing X-Content-Type-Options can increase MIME confusion risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-xcto-medium-010",
+      "title": "Website Analysis Guide: Missing Xcto (Medium)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Xcto\nSeverity lens: Medium\nSummary: Missing X-Content-Type-Options can increase MIME confusion risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-xcto-high-011",
+      "title": "Website Analysis Guide: Missing Xcto (High)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Xcto\nSeverity lens: High\nSummary: Missing X-Content-Type-Options can increase MIME confusion risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-xcto-critical-012",
+      "title": "Website Analysis Guide: Missing Xcto (Critical)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Xcto\nSeverity lens: Critical\nSummary: Missing X-Content-Type-Options can increase MIME confusion risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-referrer-policy-low-013",
+      "title": "Website Analysis Guide: Missing Referrer Policy (Low)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Referrer Policy\nSeverity lens: Low\nSummary: Missing Referrer-Policy may leak navigation context.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-referrer-policy-medium-014",
+      "title": "Website Analysis Guide: Missing Referrer Policy (Medium)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Referrer Policy\nSeverity lens: Medium\nSummary: Missing Referrer-Policy may leak navigation context.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-referrer-policy-high-015",
+      "title": "Website Analysis Guide: Missing Referrer Policy (High)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Referrer Policy\nSeverity lens: High\nSummary: Missing Referrer-Policy may leak navigation context.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-missing-referrer-policy-critical-016",
+      "title": "Website Analysis Guide: Missing Referrer Policy (Critical)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Missing Referrer Policy\nSeverity lens: Critical\nSummary: Missing Referrer-Policy may leak navigation context.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-server-header-exposure-low-017",
+      "title": "Website Analysis Guide: Server Header Exposure (Low)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Server Header Exposure\nSeverity lens: Low\nSummary: Server header exposure reveals implementation details.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-server-header-exposure-medium-018",
+      "title": "Website Analysis Guide: Server Header Exposure (Medium)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Server Header Exposure\nSeverity lens: Medium\nSummary: Server header exposure reveals implementation details.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-server-header-exposure-high-019",
+      "title": "Website Analysis Guide: Server Header Exposure (High)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Server Header Exposure\nSeverity lens: High\nSummary: Server header exposure reveals implementation details.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-server-header-exposure-critical-020",
+      "title": "Website Analysis Guide: Server Header Exposure (Critical)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Server Header Exposure\nSeverity lens: Critical\nSummary: Server header exposure reveals implementation details.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-weak-tls-window-low-021",
+      "title": "Website Analysis Guide: Weak Tls Window (Low)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Weak Tls Window\nSeverity lens: Low\nSummary: Short certificate lifetime visibility helps track rotation hygiene.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-weak-tls-window-medium-022",
+      "title": "Website Analysis Guide: Weak Tls Window (Medium)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Weak Tls Window\nSeverity lens: Medium\nSummary: Short certificate lifetime visibility helps track rotation hygiene.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-weak-tls-window-high-023",
+      "title": "Website Analysis Guide: Weak Tls Window (High)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Weak Tls Window\nSeverity lens: High\nSummary: Short certificate lifetime visibility helps track rotation hygiene.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-weak-tls-window-critical-024",
+      "title": "Website Analysis Guide: Weak Tls Window (Critical)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Weak Tls Window\nSeverity lens: Critical\nSummary: Short certificate lifetime visibility helps track rotation hygiene.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-redirect-chain-low-025",
+      "title": "Website Analysis Guide: Redirect Chain (Low)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Redirect Chain\nSeverity lens: Low\nSummary: Redirect chains affect trust, caching, and edge policy validation.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-redirect-chain-medium-026",
+      "title": "Website Analysis Guide: Redirect Chain (Medium)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Redirect Chain\nSeverity lens: Medium\nSummary: Redirect chains affect trust, caching, and edge policy validation.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-redirect-chain-high-027",
+      "title": "Website Analysis Guide: Redirect Chain (High)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Redirect Chain\nSeverity lens: High\nSummary: Redirect chains affect trust, caching, and edge policy validation.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-redirect-chain-critical-028",
+      "title": "Website Analysis Guide: Redirect Chain (Critical)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Redirect Chain\nSeverity lens: Critical\nSummary: Redirect chains affect trust, caching, and edge policy validation.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-cookie-scope-low-029",
+      "title": "Website Analysis Guide: Cookie Scope (Low)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Cookie Scope\nSeverity lens: Low\nSummary: Cookie scope and flags affect session exposure risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-cookie-scope-medium-030",
+      "title": "Website Analysis Guide: Cookie Scope (Medium)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Cookie Scope\nSeverity lens: Medium\nSummary: Cookie scope and flags affect session exposure risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-cookie-scope-high-031",
+      "title": "Website Analysis Guide: Cookie Scope (High)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Cookie Scope\nSeverity lens: High\nSummary: Cookie scope and flags affect session exposure risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-cookie-scope-critical-032",
+      "title": "Website Analysis Guide: Cookie Scope (Critical)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Cookie Scope\nSeverity lens: Critical\nSummary: Cookie scope and flags affect session exposure risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-frame-controls-low-033",
+      "title": "Website Analysis Guide: Frame Controls (Low)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Frame Controls\nSeverity lens: Low\nSummary: Clickjacking protections depend on frame restrictions.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-frame-controls-medium-034",
+      "title": "Website Analysis Guide: Frame Controls (Medium)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Frame Controls\nSeverity lens: Medium\nSummary: Clickjacking protections depend on frame restrictions.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-frame-controls-high-035",
+      "title": "Website Analysis Guide: Frame Controls (High)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Frame Controls\nSeverity lens: High\nSummary: Clickjacking protections depend on frame restrictions.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-frame-controls-critical-036",
+      "title": "Website Analysis Guide: Frame Controls (Critical)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Frame Controls\nSeverity lens: Critical\nSummary: Clickjacking protections depend on frame restrictions.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-cache-controls-low-037",
+      "title": "Website Analysis Guide: Cache Controls (Low)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Cache Controls\nSeverity lens: Low\nSummary: Cache behavior influences token and page exposure risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-cache-controls-medium-038",
+      "title": "Website Analysis Guide: Cache Controls (Medium)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Cache Controls\nSeverity lens: Medium\nSummary: Cache behavior influences token and page exposure risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-cache-controls-high-039",
+      "title": "Website Analysis Guide: Cache Controls (High)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Cache Controls\nSeverity lens: High\nSummary: Cache behavior influences token and page exposure risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    },
+    {
+      "doc_key": "website-analysis-cache-controls-critical-040",
+      "title": "Website Analysis Guide: Cache Controls (Critical)",
+      "category": "website-analysis",
+      "source_url": "",
+      "content": "Finding: Cache Controls\nSeverity lens: Critical\nSummary: Cache behavior influences token and page exposure risk.\nInterpretation: use the graphical threat view to decide whether the issue is isolated, repeated, or combined with other baseline weaknesses.\nAnalyst explanation: explain the issue in simple language, then connect it to user impact, attacker opportunity, and practical remediation.\nFollow-up: verify whether the issue is expected by design, handled elsewhere, or worth escalating into a site report."
+    }
+  ]
+}

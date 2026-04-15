@@ -1,0 +1,144 @@
+{
+  "documents": [
+    {
+      "doc_key": "cve-2014-0160",
+      "title": "OpenSSL Heartbleed",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: OpenSSL\nSeverity: Critical\nSummary: The Heartbleed bug allows memory disclosure from affected OpenSSL implementations.\nAffected area: TLS heartbeat processing.\nDefensive guidance: patch OpenSSL, rotate private keys, revoke and reissue certificates, and invalidate affected sessions."
+    },
+    {
+      "doc_key": "cve-2014-6271",
+      "title": "GNU Bash Shellshock",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: GNU Bash\nSeverity: Critical\nSummary: Environment variables can trigger arbitrary command execution in vulnerable Bash versions.\nAffected area: command parsing.\nDefensive guidance: patch Bash, review CGI exposure, and inspect logs for suspicious header-based command injection."
+    },
+    {
+      "doc_key": "cve-2017-0144",
+      "title": "SMBv1 EternalBlue",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Microsoft Windows SMBv1\nSeverity: Critical\nSummary: Remote code execution through specially crafted SMB packets.\nAffected area: SMBv1 service.\nDefensive guidance: disable SMBv1, apply Microsoft patches, isolate exposed hosts, and hunt for lateral movement."
+    },
+    {
+      "doc_key": "cve-2017-5638",
+      "title": "Apache Struts Jakarta Multipart Parser RCE",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Apache Struts 2\nSeverity: Critical\nSummary: Crafted Content-Type headers can lead to remote code execution.\nAffected area: Jakarta multipart parser.\nDefensive guidance: patch Struts immediately, inspect inbound request logs, and monitor for web shell behavior."
+    },
+    {
+      "doc_key": "cve-2019-19781",
+      "title": "Citrix ADC Directory Traversal",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Citrix ADC / Gateway\nSeverity: Critical\nSummary: Path traversal can expose or enable execution through the management stack.\nAffected area: VPN and appliance gateway paths.\nDefensive guidance: patch appliances, remove exposed management interfaces, and review logs for unusual traversal patterns."
+    },
+    {
+      "doc_key": "cve-2020-1472",
+      "title": "Zerologon",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Microsoft Netlogon\nSeverity: Critical\nSummary: Weak cryptographic validation in Netlogon allows domain compromise.\nAffected area: domain controller authentication.\nDefensive guidance: patch domain controllers, enforce secure RPC usage, and review DC events for suspicious machine account changes."
+    },
+    {
+      "doc_key": "cve-2021-26855",
+      "title": "Microsoft Exchange ProxyLogon",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Microsoft Exchange Server\nSeverity: Critical\nSummary: Server-side request forgery can lead to authentication bypass and further compromise.\nAffected area: Exchange web services.\nDefensive guidance: patch Exchange, investigate web shell indicators, rotate credentials, and preserve IIS logs."
+    },
+    {
+      "doc_key": "cve-2021-34527",
+      "title": "PrintNightmare",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Windows Print Spooler\nSeverity: Critical\nSummary: Vulnerable spooler behavior can allow remote code execution or privilege escalation.\nAffected area: print spooler service.\nDefensive guidance: patch Windows, disable spooler on systems that do not need it, and monitor driver installation events."
+    },
+    {
+      "doc_key": "cve-2021-44228",
+      "title": "Log4Shell",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Apache Log4j\nSeverity: Critical\nSummary: JNDI lookup processing can lead to remote code execution in vulnerable Log4j versions.\nAffected area: application logging.\nDefensive guidance: upgrade Log4j, block risky outbound connections, search logs for JNDI patterns, and rotate secrets if exposure is confirmed."
+    },
+    {
+      "doc_key": "cve-2022-22965",
+      "title": "Spring4Shell",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Spring Framework\nSeverity: Critical\nSummary: Data binding in certain deployments can allow remote code execution.\nAffected area: Java web application binding.\nDefensive guidance: patch Spring, review deployment patterns, and check for unexpected file writes or web shell artifacts."
+    },
+    {
+      "doc_key": "cve-2023-23397",
+      "title": "Microsoft Outlook NTLM Leak",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Microsoft Outlook\nSeverity: Critical\nSummary: Specially crafted reminders can trigger NTLM credential leakage.\nAffected area: Outlook calendar processing.\nDefensive guidance: patch Outlook, review malicious reminder artifacts, and hunt for suspicious SMB or outbound authentication attempts."
+    },
+    {
+      "doc_key": "cve-2023-34362",
+      "title": "MOVEit Transfer SQL Injection",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Progress MOVEit Transfer\nSeverity: Critical\nSummary: SQL injection can lead to data theft and server compromise.\nAffected area: MOVEit web application.\nDefensive guidance: patch immediately, inspect for web shell indicators, rotate credentials, and review transferred data exposure."
+    },
+    {
+      "doc_key": "cve-2023-3519",
+      "title": "Citrix ADC RCE",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Citrix ADC / Gateway\nSeverity: Critical\nSummary: Memory corruption can lead to unauthenticated remote code execution.\nAffected area: appliance gateway services.\nDefensive guidance: patch exposed appliances, monitor for suspicious child processes, and validate appliance integrity."
+    },
+    {
+      "doc_key": "cve-2023-4966",
+      "title": "Citrix Bleed",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: NetScaler ADC / Gateway\nSeverity: Critical\nSummary: Session token leakage can expose authenticated sessions.\nAffected area: VPN and gateway session handling.\nDefensive guidance: patch the appliance, invalidate sessions, rotate credentials, and review remote access logs."
+    },
+    {
+      "doc_key": "cve-2023-22515",
+      "title": "Atlassian Confluence Authorization Bypass",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Atlassian Confluence\nSeverity: Critical\nSummary: Authorization bypass can allow attacker-controlled administrative actions.\nAffected area: Confluence setup and admin workflows.\nDefensive guidance: patch Confluence, inspect audit logs, and review unauthorized account or configuration changes."
+    },
+    {
+      "doc_key": "cve-2024-21762",
+      "title": "Fortinet FortiOS SSL VPN RCE",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Fortinet FortiOS\nSeverity: Critical\nSummary: Out-of-bounds write in SSL VPN can allow remote code execution.\nAffected area: VPN service.\nDefensive guidance: patch appliances, monitor VPN logs, and check for suspicious administrative or process activity."
+    },
+    {
+      "doc_key": "cve-2024-3094",
+      "title": "XZ Utils Backdoor",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: XZ Utils\nSeverity: Critical\nSummary: Backdoored releases can undermine SSH authentication and system trust.\nAffected area: library supply chain.\nDefensive guidance: remove affected builds, verify package provenance, and revalidate system integrity."
+    },
+    {
+      "doc_key": "cve-2024-3400",
+      "title": "PAN-OS GlobalProtect Command Injection",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: Palo Alto PAN-OS\nSeverity: Critical\nSummary: Command injection in GlobalProtect can allow unauthenticated execution.\nAffected area: firewall edge services.\nDefensive guidance: patch immediately, inspect device telemetry, and review lateral movement indicators from exposed gateways."
+    },
+    {
+      "doc_key": "cve-2024-4577",
+      "title": "PHP CGI Argument Injection",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: PHP CGI\nSeverity: Critical\nSummary: Improper argument handling can lead to remote code execution on some deployments.\nAffected area: CGI mode execution.\nDefensive guidance: patch PHP, avoid CGI mode where possible, and inspect web logs for crafted query-string execution attempts."
+    },
+    {
+      "doc_key": "cve-2024-6387",
+      "title": "OpenSSH regreSSHion",
+      "category": "cve",
+      "source_url": "",
+      "content": "Vendor/Product: OpenSSH\nSeverity: High\nSummary: A signal handler race can allow remote code execution in some server configurations.\nAffected area: sshd authentication handling.\nDefensive guidance: patch OpenSSH, reduce exposure of internet-facing SSH, and monitor authentication and crash telemetry."
+    }
+  ]
+}

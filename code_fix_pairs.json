@@ -1,0 +1,704 @@
+{
+  "documents": [
+    {
+      "doc_key": "sql-injection-python-1",
+      "title": "SQL Injection Example 1 (python)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: python\nVulnerability: SQL Injection\nInsecure code:\nquery = f\"SELECT * FROM users WHERE id = '{user_id}'\"\n\nSecure code:\ncur.execute(\"SELECT * FROM users WHERE id = %s\", (user_id,))\n\nWhy insecure:\nDirect string interpolation in SQL lets attacker-controlled input alter query structure. Use parameterized statements and least-privilege database accounts."
+    },
+    {
+      "doc_key": "sql-injection-php-2",
+      "title": "SQL Injection Example 2 (php)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: php\nVulnerability: SQL Injection\nInsecure code:\n$sql = \"SELECT * FROM users WHERE email = '\" . $_POST['email'] . \"'\";\n\nSecure code:\n$stmt = $pdo->prepare(\"SELECT * FROM users WHERE email = ?\"); $stmt->execute([$_POST['email']]);\n\nWhy insecure:\nDirect string interpolation in SQL lets attacker-controlled input alter query structure. Use parameterized statements and least-privilege database accounts."
+    },
+    {
+      "doc_key": "sql-injection-node-3",
+      "title": "SQL Injection Example 3 (node)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: node\nVulnerability: SQL Injection\nInsecure code:\nconst sql = `SELECT * FROM users WHERE name = '${name}'`;\n\nSecure code:\ndb.query('SELECT * FROM users WHERE name = ?', [name]);\n\nWhy insecure:\nDirect string interpolation in SQL lets attacker-controlled input alter query structure. Use parameterized statements and least-privilege database accounts."
+    },
+    {
+      "doc_key": "sql-injection-java-4",
+      "title": "SQL Injection Example 4 (java)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: java\nVulnerability: SQL Injection\nInsecure code:\nString q = \"SELECT * FROM users WHERE id='\" + id + \"'\";\n\nSecure code:\nPreparedStatement ps = conn.prepareStatement(\"SELECT * FROM users WHERE id=?\");\n\nWhy insecure:\nDirect string interpolation in SQL lets attacker-controlled input alter query structure. Use parameterized statements and least-privilege database accounts."
+    },
+    {
+      "doc_key": "sql-injection-go-5",
+      "title": "SQL Injection Example 5 (go)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: go\nVulnerability: SQL Injection\nInsecure code:\ndb.Query(\"SELECT * FROM users WHERE email='\" + email + \"'\")\n\nSecure code:\ndb.Query(\"SELECT * FROM users WHERE email = ?\", email)\n\nWhy insecure:\nDirect string interpolation in SQL lets attacker-controlled input alter query structure. Use parameterized statements and least-privilege database accounts."
+    },
+    {
+      "doc_key": "sql-injection-ruby-6",
+      "title": "SQL Injection Example 6 (ruby)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: ruby\nVulnerability: SQL Injection\nInsecure code:\nUser.where(\"email = '#{email}'\")\n\nSecure code:\nUser.where(email: email)\n\nWhy insecure:\nDirect string interpolation in SQL lets attacker-controlled input alter query structure. Use parameterized statements and least-privilege database accounts."
+    },
+    {
+      "doc_key": "sql-injection-csharp-7",
+      "title": "SQL Injection Example 7 (csharp)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: csharp\nVulnerability: SQL Injection\nInsecure code:\nvar sql = $\"SELECT * FROM Users WHERE Id = '{id}'\";\n\nSecure code:\nvar cmd = new SqlCommand(\"SELECT * FROM Users WHERE Id = @id\", conn);\n\nWhy insecure:\nDirect string interpolation in SQL lets attacker-controlled input alter query structure. Use parameterized statements and least-privilege database accounts."
+    },
+    {
+      "doc_key": "sql-injection-rust-8",
+      "title": "SQL Injection Example 8 (rust)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: rust\nVulnerability: SQL Injection\nInsecure code:\nlet q = format!(\"SELECT * FROM users WHERE id = '{}'\", user_id);\n\nSecure code:\nsqlx::query(\"SELECT * FROM users WHERE id = ?\").bind(user_id);\n\nWhy insecure:\nDirect string interpolation in SQL lets attacker-controlled input alter query structure. Use parameterized statements and least-privilege database accounts."
+    },
+    {
+      "doc_key": "sql-injection-perl-9",
+      "title": "SQL Injection Example 9 (perl)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: perl\nVulnerability: SQL Injection\nInsecure code:\n$dbh->do(\"SELECT * FROM users WHERE name = '$name'\");\n\nSecure code:\n$sth = $dbh->prepare('SELECT * FROM users WHERE name = ?'); $sth->execute($name);\n\nWhy insecure:\nDirect string interpolation in SQL lets attacker-controlled input alter query structure. Use parameterized statements and least-privilege database accounts."
+    },
+    {
+      "doc_key": "sql-injection-scala-10",
+      "title": "SQL Injection Example 10 (scala)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: scala\nVulnerability: SQL Injection\nInsecure code:\nval q = s\"SELECT * FROM users WHERE id = '$id'\"\n\nSecure code:\nsql\"SELECT * FROM users WHERE id = $id\".as(...)\n\nWhy insecure:\nDirect string interpolation in SQL lets attacker-controlled input alter query structure. Use parameterized statements and least-privilege database accounts."
+    },
+    {
+      "doc_key": "xss-javascript-1",
+      "title": "Cross-Site Scripting Example 1 (javascript)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: javascript\nVulnerability: Cross-Site Scripting\nInsecure code:\nel.innerHTML = userComment;\n\nSecure code:\nel.textContent = userComment;\n\nWhy insecure:\nRendering untrusted content as HTML or script allows arbitrary browser-side code execution. Prefer contextual output encoding and safe DOM APIs."
+    },
+    {
+      "doc_key": "xss-php-2",
+      "title": "Cross-Site Scripting Example 2 (php)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: php\nVulnerability: Cross-Site Scripting\nInsecure code:\necho $_GET['name'];\n\nSecure code:\necho htmlspecialchars($_GET['name'], ENT_QUOTES, 'UTF-8');\n\nWhy insecure:\nRendering untrusted content as HTML or script allows arbitrary browser-side code execution. Prefer contextual output encoding and safe DOM APIs."
+    },
+    {
+      "doc_key": "xss-python-3",
+      "title": "Cross-Site Scripting Example 3 (python)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: python\nVulnerability: Cross-Site Scripting\nInsecure code:\nreturn f'<div>{comment}</div>'\n\nSecure code:\nreturn render_template('view.html', comment=comment)\n\nWhy insecure:\nRendering untrusted content as HTML or script allows arbitrary browser-side code execution. Prefer contextual output encoding and safe DOM APIs."
+    },
+    {
+      "doc_key": "xss-java-4",
+      "title": "Cross-Site Scripting Example 4 (java)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: java\nVulnerability: Cross-Site Scripting\nInsecure code:\nout.println(request.getParameter(\"q\"));\n\nSecure code:\nout.println(StringEscapeUtils.escapeHtml4(request.getParameter(\"q\")));\n\nWhy insecure:\nRendering untrusted content as HTML or script allows arbitrary browser-side code execution. Prefer contextual output encoding and safe DOM APIs."
+    },
+    {
+      "doc_key": "xss-ruby-5",
+      "title": "Cross-Site Scripting Example 5 (ruby)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: ruby\nVulnerability: Cross-Site Scripting\nInsecure code:\n<%= raw params[:message] %>\n\nSecure code:\n<%= params[:message] %>\n\nWhy insecure:\nRendering untrusted content as HTML or script allows arbitrary browser-side code execution. Prefer contextual output encoding and safe DOM APIs."
+    },
+    {
+      "doc_key": "xss-go-6",
+      "title": "Cross-Site Scripting Example 6 (go)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: go\nVulnerability: Cross-Site Scripting\nInsecure code:\nfmt.Fprintf(w, userInput)\n\nSecure code:\ntemplate.HTMLEscape(w, []byte(userInput))\n\nWhy insecure:\nRendering untrusted content as HTML or script allows arbitrary browser-side code execution. Prefer contextual output encoding and safe DOM APIs."
+    },
+    {
+      "doc_key": "xss-csharp-7",
+      "title": "Cross-Site Scripting Example 7 (csharp)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: csharp\nVulnerability: Cross-Site Scripting\nInsecure code:\n@Html.Raw(Model.Comment)\n\nSecure code:\n@Model.Comment\n\nWhy insecure:\nRendering untrusted content as HTML or script allows arbitrary browser-side code execution. Prefer contextual output encoding and safe DOM APIs."
+    },
+    {
+      "doc_key": "xss-vue-8",
+      "title": "Cross-Site Scripting Example 8 (vue)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: vue\nVulnerability: Cross-Site Scripting\nInsecure code:\n<div v-html=\"message\"></div>\n\nSecure code:\n<div>{{ message }}</div>\n\nWhy insecure:\nRendering untrusted content as HTML or script allows arbitrary browser-side code execution. Prefer contextual output encoding and safe DOM APIs."
+    },
+    {
+      "doc_key": "xss-react-9",
+      "title": "Cross-Site Scripting Example 9 (react)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: react\nVulnerability: Cross-Site Scripting\nInsecure code:\n<div dangerouslySetInnerHTML={{__html: html}} />\n\nSecure code:\n<div>{text}</div>\n\nWhy insecure:\nRendering untrusted content as HTML or script allows arbitrary browser-side code execution. Prefer contextual output encoding and safe DOM APIs."
+    },
+    {
+      "doc_key": "xss-django-10",
+      "title": "Cross-Site Scripting Example 10 (django)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: django\nVulnerability: Cross-Site Scripting\nInsecure code:\n{{ comment|safe }}\n\nSecure code:\n{{ comment }}\n\nWhy insecure:\nRendering untrusted content as HTML or script allows arbitrary browser-side code execution. Prefer contextual output encoding and safe DOM APIs."
+    },
+    {
+      "doc_key": "command-injection-python-1",
+      "title": "Command Injection Example 1 (python)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: python\nVulnerability: Command Injection\nInsecure code:\nos.system('ping ' + host)\n\nSecure code:\nsubprocess.run(['ping', host], check=True)\n\nWhy insecure:\nConcatenating user input into shell commands can execute arbitrary OS commands. Avoid shells and pass arguments as separate values."
+    },
+    {
+      "doc_key": "command-injection-php-2",
+      "title": "Command Injection Example 2 (php)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: php\nVulnerability: Command Injection\nInsecure code:\nsystem('nslookup ' . $_GET['host']);\n\nSecure code:\n$host = escapeshellarg($_GET['host']); system(\"nslookup $host\");\n\nWhy insecure:\nConcatenating user input into shell commands can execute arbitrary OS commands. Avoid shells and pass arguments as separate values."
+    },
+    {
+      "doc_key": "command-injection-node-3",
+      "title": "Command Injection Example 3 (node)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: node\nVulnerability: Command Injection\nInsecure code:\nexec('ping ' + host)\n\nSecure code:\nexecFile('ping', [host])\n\nWhy insecure:\nConcatenating user input into shell commands can execute arbitrary OS commands. Avoid shells and pass arguments as separate values."
+    },
+    {
+      "doc_key": "command-injection-ruby-4",
+      "title": "Command Injection Example 4 (ruby)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: ruby\nVulnerability: Command Injection\nInsecure code:\nsystem(\"ping #{host}\")\n\nSecure code:\nsystem('ping', host)\n\nWhy insecure:\nConcatenating user input into shell commands can execute arbitrary OS commands. Avoid shells and pass arguments as separate values."
+    },
+    {
+      "doc_key": "command-injection-perl-5",
+      "title": "Command Injection Example 5 (perl)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: perl\nVulnerability: Command Injection\nInsecure code:\nsystem(\"ping $host\")\n\nSecure code:\nsystem('ping', $host)\n\nWhy insecure:\nConcatenating user input into shell commands can execute arbitrary OS commands. Avoid shells and pass arguments as separate values."
+    },
+    {
+      "doc_key": "command-injection-go-6",
+      "title": "Command Injection Example 6 (go)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: go\nVulnerability: Command Injection\nInsecure code:\nexec.Command(\"sh\", \"-c\", \"ping \"+host).Run()\n\nSecure code:\nexec.Command(\"ping\", host).Run()\n\nWhy insecure:\nConcatenating user input into shell commands can execute arbitrary OS commands. Avoid shells and pass arguments as separate values."
+    },
+    {
+      "doc_key": "command-injection-java-7",
+      "title": "Command Injection Example 7 (java)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: java\nVulnerability: Command Injection\nInsecure code:\nRuntime.getRuntime().exec(\"ping \" + host);\n\nSecure code:\nnew ProcessBuilder(\"ping\", host).start();\n\nWhy insecure:\nConcatenating user input into shell commands can execute arbitrary OS commands. Avoid shells and pass arguments as separate values."
+    },
+    {
+      "doc_key": "command-injection-csharp-8",
+      "title": "Command Injection Example 8 (csharp)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: csharp\nVulnerability: Command Injection\nInsecure code:\nProcess.Start(\"cmd.exe\", \"/c ping \" + host);\n\nSecure code:\nProcess.Start(new ProcessStartInfo(\"ping\", host));\n\nWhy insecure:\nConcatenating user input into shell commands can execute arbitrary OS commands. Avoid shells and pass arguments as separate values."
+    },
+    {
+      "doc_key": "command-injection-rust-9",
+      "title": "Command Injection Example 9 (rust)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: rust\nVulnerability: Command Injection\nInsecure code:\nCommand::new(\"sh\").arg(\"-c\").arg(format!(\"ping {}\", host)).status();\n\nSecure code:\nCommand::new(\"ping\").arg(host).status();\n\nWhy insecure:\nConcatenating user input into shell commands can execute arbitrary OS commands. Avoid shells and pass arguments as separate values."
+    },
+    {
+      "doc_key": "command-injection-bash-10",
+      "title": "Command Injection Example 10 (bash)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: bash\nVulnerability: Command Injection\nInsecure code:\neval \"ping $HOST\"\n\nSecure code:\nping -- \"$HOST\"\n\nWhy insecure:\nConcatenating user input into shell commands can execute arbitrary OS commands. Avoid shells and pass arguments as separate values."
+    },
+    {
+      "doc_key": "path-traversal-python-1",
+      "title": "Path Traversal Example 1 (python)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: python\nVulnerability: Path Traversal\nInsecure code:\nopen('/var/data/' + filename)\n\nSecure code:\nopen((BASE_DIR / Path(filename).name))\n\nWhy insecure:\nJoining untrusted file names directly into paths can expose arbitrary filesystem locations. Restrict to approved directories and normalize names."
+    },
+    {
+      "doc_key": "path-traversal-php-2",
+      "title": "Path Traversal Example 2 (php)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: php\nVulnerability: Path Traversal\nInsecure code:\nreadfile('/srv/files/' . $_GET['file']);\n\nSecure code:\n$name = basename($_GET['file']); readfile('/srv/files/' . $name);\n\nWhy insecure:\nJoining untrusted file names directly into paths can expose arbitrary filesystem locations. Restrict to approved directories and normalize names."
+    },
+    {
+      "doc_key": "path-traversal-node-3",
+      "title": "Path Traversal Example 3 (node)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: node\nVulnerability: Path Traversal\nInsecure code:\nfs.readFileSync('/srv/files/' + file)\n\nSecure code:\nfs.readFileSync(path.join(BASE, path.basename(file)))\n\nWhy insecure:\nJoining untrusted file names directly into paths can expose arbitrary filesystem locations. Restrict to approved directories and normalize names."
+    },
+    {
+      "doc_key": "path-traversal-java-4",
+      "title": "Path Traversal Example 4 (java)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: java\nVulnerability: Path Traversal\nInsecure code:\nPaths.get(base + file)\n\nSecure code:\nPaths.get(base).resolve(Paths.get(file).getFileName())\n\nWhy insecure:\nJoining untrusted file names directly into paths can expose arbitrary filesystem locations. Restrict to approved directories and normalize names."
+    },
+    {
+      "doc_key": "path-traversal-go-5",
+      "title": "Path Traversal Example 5 (go)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: go\nVulnerability: Path Traversal\nInsecure code:\nos.ReadFile(\"/srv/files/\" + name)\n\nSecure code:\nos.ReadFile(filepath.Join(base, filepath.Base(name)))\n\nWhy insecure:\nJoining untrusted file names directly into paths can expose arbitrary filesystem locations. Restrict to approved directories and normalize names."
+    },
+    {
+      "doc_key": "path-traversal-ruby-6",
+      "title": "Path Traversal Example 6 (ruby)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: ruby\nVulnerability: Path Traversal\nInsecure code:\nFile.read('/srv/files/' + params[:f])\n\nSecure code:\nFile.read(File.join(BASE, File.basename(params[:f])))\n\nWhy insecure:\nJoining untrusted file names directly into paths can expose arbitrary filesystem locations. Restrict to approved directories and normalize names."
+    },
+    {
+      "doc_key": "path-traversal-csharp-7",
+      "title": "Path Traversal Example 7 (csharp)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: csharp\nVulnerability: Path Traversal\nInsecure code:\nFile.ReadAllText(baseDir + file)\n\nSecure code:\nFile.ReadAllText(Path.Combine(baseDir, Path.GetFileName(file)))\n\nWhy insecure:\nJoining untrusted file names directly into paths can expose arbitrary filesystem locations. Restrict to approved directories and normalize names."
+    },
+    {
+      "doc_key": "path-traversal-rust-8",
+      "title": "Path Traversal Example 8 (rust)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: rust\nVulnerability: Path Traversal\nInsecure code:\nfs::read_to_string(format!(\"/srv/files/{}\", file))\n\nSecure code:\nfs::read_to_string(base.join(Path::new(file).file_name().unwrap()))\n\nWhy insecure:\nJoining untrusted file names directly into paths can expose arbitrary filesystem locations. Restrict to approved directories and normalize names."
+    },
+    {
+      "doc_key": "path-traversal-perl-9",
+      "title": "Path Traversal Example 9 (perl)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: perl\nVulnerability: Path Traversal\nInsecure code:\nopen my $fh, '<', \"/srv/files/$file\";\n\nSecure code:\nuse File::Basename; open my $fh, '<', '/srv/files/' . basename($file);\n\nWhy insecure:\nJoining untrusted file names directly into paths can expose arbitrary filesystem locations. Restrict to approved directories and normalize names."
+    },
+    {
+      "doc_key": "path-traversal-scala-10",
+      "title": "Path Traversal Example 10 (scala)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: scala\nVulnerability: Path Traversal\nInsecure code:\nSource.fromFile(base + name)\n\nSecure code:\nSource.fromFile(Paths.get(base, Paths.get(name).getFileName.toString).toFile)\n\nWhy insecure:\nJoining untrusted file names directly into paths can expose arbitrary filesystem locations. Restrict to approved directories and normalize names."
+    },
+    {
+      "doc_key": "hardcoded-secrets-python-1",
+      "title": "Hardcoded Secrets Example 1 (python)",
+      "category": "secrets-management",
+      "source_url": "",
+      "content": "Language: python\nVulnerability: Hardcoded Secrets\nInsecure code:\nAPI_KEY = 'prod-secret-key'\n\nSecure code:\nAPI_KEY = os.environ['API_KEY']\n\nWhy insecure:\nHardcoded credentials leak through repos, logs, and builds. Read secrets from environment variables or a dedicated secret manager."
+    },
+    {
+      "doc_key": "hardcoded-secrets-node-2",
+      "title": "Hardcoded Secrets Example 2 (node)",
+      "category": "secrets-management",
+      "source_url": "",
+      "content": "Language: node\nVulnerability: Hardcoded Secrets\nInsecure code:\nconst token = 'ghp_example';\n\nSecure code:\nconst token = process.env.GITHUB_TOKEN;\n\nWhy insecure:\nHardcoded credentials leak through repos, logs, and builds. Read secrets from environment variables or a dedicated secret manager."
+    },
+    {
+      "doc_key": "hardcoded-secrets-php-3",
+      "title": "Hardcoded Secrets Example 3 (php)",
+      "category": "secrets-management",
+      "source_url": "",
+      "content": "Language: php\nVulnerability: Hardcoded Secrets\nInsecure code:\n$dbPass = 'supersecret';\n\nSecure code:\n$dbPass = getenv('DB_PASSWORD');\n\nWhy insecure:\nHardcoded credentials leak through repos, logs, and builds. Read secrets from environment variables or a dedicated secret manager."
+    },
+    {
+      "doc_key": "hardcoded-secrets-java-4",
+      "title": "Hardcoded Secrets Example 4 (java)",
+      "category": "secrets-management",
+      "source_url": "",
+      "content": "Language: java\nVulnerability: Hardcoded Secrets\nInsecure code:\nString secret = \"aws-secret\";\n\nSecure code:\nString secret = System.getenv(\"AWS_SECRET_ACCESS_KEY\");\n\nWhy insecure:\nHardcoded credentials leak through repos, logs, and builds. Read secrets from environment variables or a dedicated secret manager."
+    },
+    {
+      "doc_key": "hardcoded-secrets-go-5",
+      "title": "Hardcoded Secrets Example 5 (go)",
+      "category": "secrets-management",
+      "source_url": "",
+      "content": "Language: go\nVulnerability: Hardcoded Secrets\nInsecure code:\npassword := \"rootpass\"\n\nSecure code:\npassword := os.Getenv(\"DB_PASSWORD\")\n\nWhy insecure:\nHardcoded credentials leak through repos, logs, and builds. Read secrets from environment variables or a dedicated secret manager."
+    },
+    {
+      "doc_key": "hardcoded-secrets-ruby-6",
+      "title": "Hardcoded Secrets Example 6 (ruby)",
+      "category": "secrets-management",
+      "source_url": "",
+      "content": "Language: ruby\nVulnerability: Hardcoded Secrets\nInsecure code:\nSECRET = 'app-secret'\n\nSecure code:\nSECRET = ENV.fetch('APP_SECRET')\n\nWhy insecure:\nHardcoded credentials leak through repos, logs, and builds. Read secrets from environment variables or a dedicated secret manager."
+    },
+    {
+      "doc_key": "hardcoded-secrets-csharp-7",
+      "title": "Hardcoded Secrets Example 7 (csharp)",
+      "category": "secrets-management",
+      "source_url": "",
+      "content": "Language: csharp\nVulnerability: Hardcoded Secrets\nInsecure code:\nvar key = \"secret\";\n\nSecure code:\nvar key = Environment.GetEnvironmentVariable(\"APP_KEY\");\n\nWhy insecure:\nHardcoded credentials leak through repos, logs, and builds. Read secrets from environment variables or a dedicated secret manager."
+    },
+    {
+      "doc_key": "hardcoded-secrets-rust-8",
+      "title": "Hardcoded Secrets Example 8 (rust)",
+      "category": "secrets-management",
+      "source_url": "",
+      "content": "Language: rust\nVulnerability: Hardcoded Secrets\nInsecure code:\nlet key = \"secret\";\n\nSecure code:\nlet key = std::env::var(\"APP_KEY\")?;\n\nWhy insecure:\nHardcoded credentials leak through repos, logs, and builds. Read secrets from environment variables or a dedicated secret manager."
+    },
+    {
+      "doc_key": "hardcoded-secrets-bash-9",
+      "title": "Hardcoded Secrets Example 9 (bash)",
+      "category": "secrets-management",
+      "source_url": "",
+      "content": "Language: bash\nVulnerability: Hardcoded Secrets\nInsecure code:\nexport API_KEY=hardcoded\n\nSecure code:\nexport API_KEY=\"$APP_API_KEY\"\n\nWhy insecure:\nHardcoded credentials leak through repos, logs, and builds. Read secrets from environment variables or a dedicated secret manager."
+    },
+    {
+      "doc_key": "hardcoded-secrets-kotlin-10",
+      "title": "Hardcoded Secrets Example 10 (kotlin)",
+      "category": "secrets-management",
+      "source_url": "",
+      "content": "Language: kotlin\nVulnerability: Hardcoded Secrets\nInsecure code:\nval secret = \"token\"\n\nSecure code:\nval secret = System.getenv(\"TOKEN\")\n\nWhy insecure:\nHardcoded credentials leak through repos, logs, and builds. Read secrets from environment variables or a dedicated secret manager."
+    },
+    {
+      "doc_key": "csrf-django-1",
+      "title": "CSRF Example 1 (django)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: django\nVulnerability: CSRF\nInsecure code:\n<form method='post'>...</form>\n\nSecure code:\n<form method='post'>{% csrf_token %}...</form>\n\nWhy insecure:\nState-changing requests without CSRF defenses can be triggered from attacker-controlled sites. Use CSRF tokens and cookie protections."
+    },
+    {
+      "doc_key": "csrf-flask-2",
+      "title": "CSRF Example 2 (flask)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: flask\nVulnerability: CSRF\nInsecure code:\n<form method='post'>...</form>\n\nSecure code:\n<form method='post'>{{ form.csrf_token }}...</form>\n\nWhy insecure:\nState-changing requests without CSRF defenses can be triggered from attacker-controlled sites. Use CSRF tokens and cookie protections."
+    },
+    {
+      "doc_key": "csrf-rails-3",
+      "title": "CSRF Example 3 (rails)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: rails\nVulnerability: CSRF\nInsecure code:\n<form action='/transfer' method='post'>\n\nSecure code:\n<%= form_with url: '/transfer' do |f| %>\n\nWhy insecure:\nState-changing requests without CSRF defenses can be triggered from attacker-controlled sites. Use CSRF tokens and cookie protections."
+    },
+    {
+      "doc_key": "csrf-express-4",
+      "title": "CSRF Example 4 (express)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: express\nVulnerability: CSRF\nInsecure code:\napp.post('/pay', payHandler)\n\nSecure code:\napp.use(csrf()); app.post('/pay', payHandler)\n\nWhy insecure:\nState-changing requests without CSRF defenses can be triggered from attacker-controlled sites. Use CSRF tokens and cookie protections."
+    },
+    {
+      "doc_key": "csrf-php-5",
+      "title": "CSRF Example 5 (php)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: php\nVulnerability: CSRF\nInsecure code:\nif ($_SERVER['REQUEST_METHOD']==='POST') transfer();\n\nSecure code:\nverify_csrf($_POST['csrf']); transfer();\n\nWhy insecure:\nState-changing requests without CSRF defenses can be triggered from attacker-controlled sites. Use CSRF tokens and cookie protections."
+    },
+    {
+      "doc_key": "csrf-spring-6",
+      "title": "CSRF Example 6 (spring)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: spring\nVulnerability: CSRF\nInsecure code:\nhttp.csrf().disable();\n\nSecure code:\nhttp.csrf(Customizer.withDefaults());\n\nWhy insecure:\nState-changing requests without CSRF defenses can be triggered from attacker-controlled sites. Use CSRF tokens and cookie protections."
+    },
+    {
+      "doc_key": "csrf-laravel-7",
+      "title": "CSRF Example 7 (laravel)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: laravel\nVulnerability: CSRF\nInsecure code:\n<form method='POST'>\n\nSecure code:\n<form method='POST'>@csrf\n\nWhy insecure:\nState-changing requests without CSRF defenses can be triggered from attacker-controlled sites. Use CSRF tokens and cookie protections."
+    },
+    {
+      "doc_key": "csrf-aspnet-8",
+      "title": "CSRF Example 8 (aspnet)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: aspnet\nVulnerability: CSRF\nInsecure code:\n<form method='post'>\n\nSecure code:\n<form method='post'>@Html.AntiForgeryToken()\n\nWhy insecure:\nState-changing requests without CSRF defenses can be triggered from attacker-controlled sites. Use CSRF tokens and cookie protections."
+    },
+    {
+      "doc_key": "csrf-nextjs-9",
+      "title": "CSRF Example 9 (nextjs)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: nextjs\nVulnerability: CSRF\nInsecure code:\nfetch('/api/update', {method:'POST'})\n\nSecure code:\nfetch('/api/update', {method:'POST', headers:{'X-CSRF-Token': token}})\n\nWhy insecure:\nState-changing requests without CSRF defenses can be triggered from attacker-controlled sites. Use CSRF tokens and cookie protections."
+    },
+    {
+      "doc_key": "csrf-go-10",
+      "title": "CSRF Example 10 (go)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: go\nVulnerability: CSRF\nInsecure code:\nhttp.HandleFunc('/save', save)\n\nSecure code:\ncsrf.Protect(key)(mux)\n\nWhy insecure:\nState-changing requests without CSRF defenses can be triggered from attacker-controlled sites. Use CSRF tokens and cookie protections."
+    },
+    {
+      "doc_key": "open-redirect-python-1",
+      "title": "Open Redirect Example 1 (python)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: python\nVulnerability: Open Redirect\nInsecure code:\nreturn redirect(request.args['next'])\n\nSecure code:\nreturn redirect(validate_relative_path(request.args.get('next')))\n\nWhy insecure:\nRedirecting to unvalidated destinations enables phishing and token leakage. Restrict redirects to local relative paths or allowlisted hosts."
+    },
+    {
+      "doc_key": "open-redirect-php-2",
+      "title": "Open Redirect Example 2 (php)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: php\nVulnerability: Open Redirect\nInsecure code:\nheader('Location: ' . $_GET['next']);\n\nSecure code:\nheader('Location: ' . safe_redirect($_GET['next']));\n\nWhy insecure:\nRedirecting to unvalidated destinations enables phishing and token leakage. Restrict redirects to local relative paths or allowlisted hosts."
+    },
+    {
+      "doc_key": "open-redirect-node-3",
+      "title": "Open Redirect Example 3 (node)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: node\nVulnerability: Open Redirect\nInsecure code:\nres.redirect(req.query.next)\n\nSecure code:\nres.redirect(validateRelativePath(req.query.next))\n\nWhy insecure:\nRedirecting to unvalidated destinations enables phishing and token leakage. Restrict redirects to local relative paths or allowlisted hosts."
+    },
+    {
+      "doc_key": "open-redirect-java-4",
+      "title": "Open Redirect Example 4 (java)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: java\nVulnerability: Open Redirect\nInsecure code:\nresponse.sendRedirect(request.getParameter(\"next\"));\n\nSecure code:\nresponse.sendRedirect(safeRelativePath(request.getParameter(\"next\")));\n\nWhy insecure:\nRedirecting to unvalidated destinations enables phishing and token leakage. Restrict redirects to local relative paths or allowlisted hosts."
+    },
+    {
+      "doc_key": "open-redirect-ruby-5",
+      "title": "Open Redirect Example 5 (ruby)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: ruby\nVulnerability: Open Redirect\nInsecure code:\nredirect_to params[:next]\n\nSecure code:\nredirect_to safe_relative_path(params[:next])\n\nWhy insecure:\nRedirecting to unvalidated destinations enables phishing and token leakage. Restrict redirects to local relative paths or allowlisted hosts."
+    },
+    {
+      "doc_key": "open-redirect-go-6",
+      "title": "Open Redirect Example 6 (go)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: go\nVulnerability: Open Redirect\nInsecure code:\nhttp.Redirect(w, r, r.URL.Query().Get(\"next\"), 302)\n\nSecure code:\nhttp.Redirect(w, r, safeRelativePath(r.URL.Query().Get(\"next\")), 302)\n\nWhy insecure:\nRedirecting to unvalidated destinations enables phishing and token leakage. Restrict redirects to local relative paths or allowlisted hosts."
+    },
+    {
+      "doc_key": "open-redirect-csharp-7",
+      "title": "Open Redirect Example 7 (csharp)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: csharp\nVulnerability: Open Redirect\nInsecure code:\nreturn Redirect(next);\n\nSecure code:\nreturn LocalRedirect(next);\n\nWhy insecure:\nRedirecting to unvalidated destinations enables phishing and token leakage. Restrict redirects to local relative paths or allowlisted hosts."
+    },
+    {
+      "doc_key": "open-redirect-rust-8",
+      "title": "Open Redirect Example 8 (rust)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: rust\nVulnerability: Open Redirect\nInsecure code:\nRedirect::to(next)\n\nSecure code:\nRedirect::to(validate_relative(next))\n\nWhy insecure:\nRedirecting to unvalidated destinations enables phishing and token leakage. Restrict redirects to local relative paths or allowlisted hosts."
+    },
+    {
+      "doc_key": "open-redirect-kotlin-9",
+      "title": "Open Redirect Example 9 (kotlin)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: kotlin\nVulnerability: Open Redirect\nInsecure code:\nreturn \"redirect:\" + next\n\nSecure code:\nreturn \"redirect:\" + safeRelativePath(next)\n\nWhy insecure:\nRedirecting to unvalidated destinations enables phishing and token leakage. Restrict redirects to local relative paths or allowlisted hosts."
+    },
+    {
+      "doc_key": "open-redirect-scala-10",
+      "title": "Open Redirect Example 10 (scala)",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Language: scala\nVulnerability: Open Redirect\nInsecure code:\nRedirect(next)\n\nSecure code:\nRedirect(safeRelative(next))\n\nWhy insecure:\nRedirecting to unvalidated destinations enables phishing and token leakage. Restrict redirects to local relative paths or allowlisted hosts."
+    },
+    {
+      "doc_key": "weak-password-storage-python-1",
+      "title": "Weak Password Storage Example 1 (python)",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Language: python\nVulnerability: Weak Password Storage\nInsecure code:\nhashed = hashlib.md5(password.encode()).hexdigest()\n\nSecure code:\nhashed = argon2_hasher.hash(password)\n\nWhy insecure:\nFast unsalted hashes are inadequate for password storage. Use adaptive password hashing such as Argon2id, scrypt, or bcrypt."
+    },
+    {
+      "doc_key": "weak-password-storage-php-2",
+      "title": "Weak Password Storage Example 2 (php)",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Language: php\nVulnerability: Weak Password Storage\nInsecure code:\n$hash = md5($password);\n\nSecure code:\n$hash = password_hash($password, PASSWORD_ARGON2ID);\n\nWhy insecure:\nFast unsalted hashes are inadequate for password storage. Use adaptive password hashing such as Argon2id, scrypt, or bcrypt."
+    },
+    {
+      "doc_key": "weak-password-storage-node-3",
+      "title": "Weak Password Storage Example 3 (node)",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Language: node\nVulnerability: Weak Password Storage\nInsecure code:\nconst hash = crypto.createHash('sha1').update(password).digest('hex')\n\nSecure code:\nconst hash = await argon2.hash(password)\n\nWhy insecure:\nFast unsalted hashes are inadequate for password storage. Use adaptive password hashing such as Argon2id, scrypt, or bcrypt."
+    },
+    {
+      "doc_key": "weak-password-storage-java-4",
+      "title": "Weak Password Storage Example 4 (java)",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Language: java\nVulnerability: Weak Password Storage\nInsecure code:\nString hash = DigestUtils.md5Hex(password);\n\nSecure code:\nString hash = BCrypt.hashpw(password, BCrypt.gensalt());\n\nWhy insecure:\nFast unsalted hashes are inadequate for password storage. Use adaptive password hashing such as Argon2id, scrypt, or bcrypt."
+    },
+    {
+      "doc_key": "weak-password-storage-go-5",
+      "title": "Weak Password Storage Example 5 (go)",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Language: go\nVulnerability: Weak Password Storage\nInsecure code:\nsum := md5.Sum([]byte(password))\n\nSecure code:\nhash, _ := bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost)\n\nWhy insecure:\nFast unsalted hashes are inadequate for password storage. Use adaptive password hashing such as Argon2id, scrypt, or bcrypt."
+    },
+    {
+      "doc_key": "weak-password-storage-ruby-6",
+      "title": "Weak Password Storage Example 6 (ruby)",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Language: ruby\nVulnerability: Weak Password Storage\nInsecure code:\nDigest::SHA1.hexdigest(password)\n\nSecure code:\nBCrypt::Password.create(password)\n\nWhy insecure:\nFast unsalted hashes are inadequate for password storage. Use adaptive password hashing such as Argon2id, scrypt, or bcrypt."
+    },
+    {
+      "doc_key": "weak-password-storage-csharp-7",
+      "title": "Weak Password Storage Example 7 (csharp)",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Language: csharp\nVulnerability: Weak Password Storage\nInsecure code:\nvar hash = SHA1.HashData(bytes);\n\nSecure code:\nvar hash = BCrypt.Net.BCrypt.HashPassword(password);\n\nWhy insecure:\nFast unsalted hashes are inadequate for password storage. Use adaptive password hashing such as Argon2id, scrypt, or bcrypt."
+    },
+    {
+      "doc_key": "weak-password-storage-rust-8",
+      "title": "Weak Password Storage Example 8 (rust)",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Language: rust\nVulnerability: Weak Password Storage\nInsecure code:\nlet hash = format!(\"{:x}\", md5::compute(password));\n\nSecure code:\nlet hash = argon2::hash_encoded(password.as_bytes(), salt, &config)?;\n\nWhy insecure:\nFast unsalted hashes are inadequate for password storage. Use adaptive password hashing such as Argon2id, scrypt, or bcrypt."
+    },
+    {
+      "doc_key": "weak-password-storage-perl-9",
+      "title": "Weak Password Storage Example 9 (perl)",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Language: perl\nVulnerability: Weak Password Storage\nInsecure code:\n$hash = md5_hex($password);\n\nSecure code:\n$hash = Authen::Passphrase::BlowfishCrypt->new(cost => 12, salt_random => 1, passphrase => $password);\n\nWhy insecure:\nFast unsalted hashes are inadequate for password storage. Use adaptive password hashing such as Argon2id, scrypt, or bcrypt."
+    },
+    {
+      "doc_key": "weak-password-storage-kotlin-10",
+      "title": "Weak Password Storage Example 10 (kotlin)",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Language: kotlin\nVulnerability: Weak Password Storage\nInsecure code:\nval hash = MessageDigest.getInstance(\"MD5\")\n\nSecure code:\nval hash = BCrypt.hashpw(password, BCrypt.gensalt())\n\nWhy insecure:\nFast unsalted hashes are inadequate for password storage. Use adaptive password hashing such as Argon2id, scrypt, or bcrypt."
+    },
+    {
+      "doc_key": "xxe-java-1",
+      "title": "XML External Entity Example 1 (java)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: java\nVulnerability: XML External Entity\nInsecure code:\nfactory.newDocumentBuilder().parse(input)\n\nSecure code:\nfactory.setFeature(\"http://apache.org/xml/features/disallow-doctype-decl\", true)\n\nWhy insecure:\nUnsafe XML parsers can fetch external entities and expose files or internal network resources. Disable DTDs and external entity resolution."
+    },
+    {
+      "doc_key": "xxe-python-2",
+      "title": "XML External Entity Example 2 (python)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: python\nVulnerability: XML External Entity\nInsecure code:\nxml.etree.ElementTree.fromstring(data)\n\nSecure code:\ndefusedxml.ElementTree.fromstring(data)\n\nWhy insecure:\nUnsafe XML parsers can fetch external entities and expose files or internal network resources. Disable DTDs and external entity resolution."
+    },
+    {
+      "doc_key": "xxe-php-3",
+      "title": "XML External Entity Example 3 (php)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: php\nVulnerability: XML External Entity\nInsecure code:\n$dom->loadXML($xml);\n\nSecure code:\n$dom->loadXML($xml, LIBXML_NONET);\n\nWhy insecure:\nUnsafe XML parsers can fetch external entities and expose files or internal network resources. Disable DTDs and external entity resolution."
+    },
+    {
+      "doc_key": "xxe-csharp-4",
+      "title": "XML External Entity Example 4 (csharp)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: csharp\nVulnerability: XML External Entity\nInsecure code:\nvar doc = new XmlDocument(); doc.LoadXml(xml);\n\nSecure code:\nvar settings = new XmlReaderSettings { DtdProcessing = DtdProcessing.Prohibit };\n\nWhy insecure:\nUnsafe XML parsers can fetch external entities and expose files or internal network resources. Disable DTDs and external entity resolution."
+    },
+    {
+      "doc_key": "xxe-go-5",
+      "title": "XML External Entity Example 5 (go)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: go\nVulnerability: XML External Entity\nInsecure code:\nxml.Unmarshal(data, &v)\n\nSecure code:\ndecoder := xml.NewDecoder(r); decoder.Strict = true\n\nWhy insecure:\nUnsafe XML parsers can fetch external entities and expose files or internal network resources. Disable DTDs and external entity resolution."
+    },
+    {
+      "doc_key": "xxe-ruby-6",
+      "title": "XML External Entity Example 6 (ruby)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: ruby\nVulnerability: XML External Entity\nInsecure code:\nNokogiri::XML(xml)\n\nSecure code:\nNokogiri::XML(xml) { |cfg| cfg.strict.nonet }\n\nWhy insecure:\nUnsafe XML parsers can fetch external entities and expose files or internal network resources. Disable DTDs and external entity resolution."
+    },
+    {
+      "doc_key": "xxe-scala-7",
+      "title": "XML External Entity Example 7 (scala)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: scala\nVulnerability: XML External Entity\nInsecure code:\nXML.loadString(xml)\n\nSecure code:\nUse a hardened XML parser with DTD disabled\n\nWhy insecure:\nUnsafe XML parsers can fetch external entities and expose files or internal network resources. Disable DTDs and external entity resolution."
+    },
+    {
+      "doc_key": "xxe-perl-8",
+      "title": "XML External Entity Example 8 (perl)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: perl\nVulnerability: XML External Entity\nInsecure code:\nXML::LibXML->load_xml(string => $xml)\n\nSecure code:\nXML::LibXML->new(no_network => 1)->load_xml(string => $xml)\n\nWhy insecure:\nUnsafe XML parsers can fetch external entities and expose files or internal network resources. Disable DTDs and external entity resolution."
+    },
+    {
+      "doc_key": "xxe-rust-9",
+      "title": "XML External Entity Example 9 (rust)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: rust\nVulnerability: XML External Entity\nInsecure code:\nroxmltree::Document::parse(xml)\n\nSecure code:\nUse parser settings that reject external entities\n\nWhy insecure:\nUnsafe XML parsers can fetch external entities and expose files or internal network resources. Disable DTDs and external entity resolution."
+    },
+    {
+      "doc_key": "xxe-javascript-10",
+      "title": "XML External Entity Example 10 (javascript)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: javascript\nVulnerability: XML External Entity\nInsecure code:\nnew DOMParser().parseFromString(xml, 'text/xml')\n\nSecure code:\nUse XML parser configuration that disables external entities\n\nWhy insecure:\nUnsafe XML parsers can fetch external entities and expose files or internal network resources. Disable DTDs and external entity resolution."
+    },
+    {
+      "doc_key": "insecure-deserialization-python-1",
+      "title": "Insecure Deserialization Example 1 (python)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: python\nVulnerability: Insecure Deserialization\nInsecure code:\nobj = pickle.loads(data)\n\nSecure code:\nobj = json.loads(data)\n\nWhy insecure:\nUnsafe object deserialization can trigger gadget chains and code execution. Prefer simple data formats and validate structure strictly."
+    },
+    {
+      "doc_key": "insecure-deserialization-php-2",
+      "title": "Insecure Deserialization Example 2 (php)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: php\nVulnerability: Insecure Deserialization\nInsecure code:\n$obj = unserialize($_POST['data']);\n\nSecure code:\n$obj = json_decode($_POST['data'], true, flags: JSON_THROW_ON_ERROR);\n\nWhy insecure:\nUnsafe object deserialization can trigger gadget chains and code execution. Prefer simple data formats and validate structure strictly."
+    },
+    {
+      "doc_key": "insecure-deserialization-java-3",
+      "title": "Insecure Deserialization Example 3 (java)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: java\nVulnerability: Insecure Deserialization\nInsecure code:\nnew ObjectInputStream(in).readObject()\n\nSecure code:\nUse JSON with strict schema validation\n\nWhy insecure:\nUnsafe object deserialization can trigger gadget chains and code execution. Prefer simple data formats and validate structure strictly."
+    },
+    {
+      "doc_key": "insecure-deserialization-ruby-4",
+      "title": "Insecure Deserialization Example 4 (ruby)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: ruby\nVulnerability: Insecure Deserialization\nInsecure code:\nMarshal.load(data)\n\nSecure code:\nJSON.parse(data)\n\nWhy insecure:\nUnsafe object deserialization can trigger gadget chains and code execution. Prefer simple data formats and validate structure strictly."
+    },
+    {
+      "doc_key": "insecure-deserialization-node-5",
+      "title": "Insecure Deserialization Example 5 (node)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: node\nVulnerability: Insecure Deserialization\nInsecure code:\nnodeSerialize.unserialize(data)\n\nSecure code:\nJSON.parse(data)\n\nWhy insecure:\nUnsafe object deserialization can trigger gadget chains and code execution. Prefer simple data formats and validate structure strictly."
+    },
+    {
+      "doc_key": "insecure-deserialization-csharp-6",
+      "title": "Insecure Deserialization Example 6 (csharp)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: csharp\nVulnerability: Insecure Deserialization\nInsecure code:\nBinaryFormatter.Deserialize(stream)\n\nSecure code:\nSystem.Text.Json.JsonSerializer.Deserialize<T>(json)\n\nWhy insecure:\nUnsafe object deserialization can trigger gadget chains and code execution. Prefer simple data formats and validate structure strictly."
+    },
+    {
+      "doc_key": "insecure-deserialization-go-7",
+      "title": "Insecure Deserialization Example 7 (go)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: go\nVulnerability: Insecure Deserialization\nInsecure code:\ngob.NewDecoder(r).Decode(&v)\n\nSecure code:\njson.NewDecoder(r).Decode(&v) with schema validation\n\nWhy insecure:\nUnsafe object deserialization can trigger gadget chains and code execution. Prefer simple data formats and validate structure strictly."
+    },
+    {
+      "doc_key": "insecure-deserialization-perl-8",
+      "title": "Insecure Deserialization Example 8 (perl)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: perl\nVulnerability: Insecure Deserialization\nInsecure code:\nthaw($data)\n\nSecure code:\ndecode_json($data)\n\nWhy insecure:\nUnsafe object deserialization can trigger gadget chains and code execution. Prefer simple data formats and validate structure strictly."
+    },
+    {
+      "doc_key": "insecure-deserialization-rust-9",
+      "title": "Insecure Deserialization Example 9 (rust)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: rust\nVulnerability: Insecure Deserialization\nInsecure code:\nbincode::deserialize(data)\n\nSecure code:\nserde_json::from_slice(data) with validation\n\nWhy insecure:\nUnsafe object deserialization can trigger gadget chains and code execution. Prefer simple data formats and validate structure strictly."
+    },
+    {
+      "doc_key": "insecure-deserialization-kotlin-10",
+      "title": "Insecure Deserialization Example 10 (kotlin)",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Language: kotlin\nVulnerability: Insecure Deserialization\nInsecure code:\nObjectInputStream(input).readObject()\n\nSecure code:\nJson.decodeFromString<T>(json)\n\nWhy insecure:\nUnsafe object deserialization can trigger gadget chains and code execution. Prefer simple data formats and validate structure strictly."
+    }
+  ]
+}

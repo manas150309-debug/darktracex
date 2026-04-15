@@ -1,0 +1,2 @@
+input_url,final_url,severity,threat_score,protection_score,status,tls_days_remaining,findings,report_path,error
+https://example.com,https://example.com,Medium,31,69,200,50,Missing HSTS header. | Missing Content-Security-Policy header. | Missing X-Content-Type-Options header. | Missing Referrer-Policy header. | Neither X-Frame-Options nor CSP frame-ancestors is present. | Server header exposed: cloudflare,/Users/manas/Desktop/chatbot/reports/example.com.md,

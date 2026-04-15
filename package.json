@@ -1,0 +1,21 @@
+{
+  "name": "darktracex-console",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local defensive cybersecurity assistant with offline knowledge and Ollama support.",
+  "scripts": {
+    "start": "python3 server.py",
+    "check:js": "node --check app.js",
+    "lint:js": "eslint app.js",
+    "format": "prettier --write \"*.{md,json}\" \"*.{js,html,css}\"",
+    "format:check": "prettier --check \"*.{md,json}\" \"*.{js,html,css}\"",
+    "check:py": "python3 -m py_compile server.py auto_learn.py build_learning_digest.py bulk_audit.py batch_url_reports.py train_defense_models.py train_site_exposure_model.py train_site_exposure_lstm.py train_site_exposure_gnn.py train_all_site_models.py generate_synthetic_site_training_data.py generate_website_knowledge_corpus.py site_exposure_gnn.py generate_code_examples.py generate_attack_knowledge.py generate_attack_playbooks.py generate_cve_playbooks.py generate_ml_training_data.py generate_phishing_examples.py",
+    "healthcheck": "python3 scripts/healthcheck.py",
+    "check": "npm run check:js && npm run lint:js && npm run check:py && npm run format:check"
+  },
+  "devDependencies": {
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3"
+  }
+}

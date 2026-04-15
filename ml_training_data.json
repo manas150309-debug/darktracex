@@ -1,0 +1,1154 @@
+{
+  "phishing_email": [
+    {
+      "label": "phishing",
+      "text": "Urgent: your payroll account is locked. Click here and confirm your password immediately."
+    },
+    {
+      "label": "phishing",
+      "text": "Executive request: buy gift cards now and send the codes back in this email."
+    },
+    {
+      "label": "phishing",
+      "text": "Your bank session expired. Verify login and card PIN from the attachment."
+    },
+    {
+      "label": "phishing",
+      "text": "Invoice overdue. Open the zip file and sign in to release payment."
+    },
+    {
+      "label": "phishing",
+      "text": "Mailbox quota exceeded. Re-enter credentials to avoid suspension today."
+    },
+    {
+      "label": "phishing",
+      "text": "Security alert from admin: approve MFA push and share the code with support."
+    },
+    {
+      "label": "phishing",
+      "text": "Vendor changed banking details. Process wire transfer in the next 10 minutes."
+    },
+    {
+      "label": "phishing",
+      "text": "Reset your password using this non-company domain link right now."
+    },
+    {
+      "label": "suspicious",
+      "text": "Unexpected message from a vendor asking to review a contract in a shared document."
+    },
+    {
+      "label": "suspicious",
+      "text": "External sender asks for confirmation of invoice details with urgency but no attachment."
+    },
+    {
+      "label": "suspicious",
+      "text": "Email contains a shortened link and vague context about a document review."
+    },
+    {
+      "label": "suspicious",
+      "text": "Request to confirm your phone number through an unfamiliar portal."
+    },
+    {
+      "label": "safe",
+      "text": "Reminder: engineering standup moved to 10:30 AM in the normal calendar invite."
+    },
+    {
+      "label": "safe",
+      "text": "Your approved internal ticket has been updated in the company helpdesk."
+    },
+    {
+      "label": "safe",
+      "text": "Quarterly security training is available on the official company LMS portal."
+    },
+    {
+      "label": "safe",
+      "text": "The IT team announced scheduled VPN maintenance in the internal status page."
+    },
+    {
+      "label": "phishing",
+      "text": "Urgent action required: verify your mailbox password immediately through this link."
+    },
+    {
+      "label": "phishing",
+      "text": "Your mailbox will be suspended today unless you confirm your credentials now."
+    },
+    {
+      "label": "phishing",
+      "text": "Open the attached document and sign in to release the blocked mailbox."
+    },
+    {
+      "label": "phishing",
+      "text": "Finance request: process wire transfer within 10 minutes and reply confidentially."
+    },
+    {
+      "label": "suspicious",
+      "text": "Unexpected external message asks you to review a mailbox document in a shared portal."
+    },
+    {
+      "label": "suspicious",
+      "text": "Sender requests confirmation of mailbox details with mild urgency and vague context."
+    },
+    {
+      "label": "suspicious",
+      "text": "Message contains a shortened link about a mailbox review with little explanation."
+    },
+    {
+      "label": "safe",
+      "text": "Internal notice: the mailbox maintenance window is scheduled and documented on the company portal."
+    },
+    {
+      "label": "safe",
+      "text": "Approved support ticket confirms the mailbox update in the official helpdesk."
+    },
+    {
+      "label": "safe",
+      "text": "Security team posted the new mailbox guidance in the internal knowledge base."
+    },
+    {
+      "label": "phishing",
+      "text": "Urgent action required: verify your VPN password immediately through this link."
+    },
+    {
+      "label": "phishing",
+      "text": "Your VPN will be suspended today unless you confirm your credentials now."
+    },
+    {
+      "label": "phishing",
+      "text": "Open the attached document and sign in to release the blocked VPN."
+    },
+    {
+      "label": "phishing",
+      "text": "Finance request: process wire transfer within 10 minutes and reply confidentially."
+    },
+    {
+      "label": "suspicious",
+      "text": "Unexpected external message asks you to review a VPN document in a shared portal."
+    },
+    {
+      "label": "suspicious",
+      "text": "Sender requests confirmation of VPN details with mild urgency and vague context."
+    },
+    {
+      "label": "suspicious",
+      "text": "Message contains a shortened link about a VPN review with little explanation."
+    },
+    {
+      "label": "safe",
+      "text": "Internal notice: the VPN maintenance window is scheduled and documented on the company portal."
+    },
+    {
+      "label": "safe",
+      "text": "Approved support ticket confirms the VPN update in the official helpdesk."
+    },
+    {
+      "label": "safe",
+      "text": "Security team posted the new VPN guidance in the internal knowledge base."
+    },
+    {
+      "label": "phishing",
+      "text": "Urgent action required: verify your payroll password immediately through this link."
+    },
+    {
+      "label": "phishing",
+      "text": "Your payroll will be suspended today unless you confirm your credentials now."
+    },
+    {
+      "label": "phishing",
+      "text": "Open the attached document and sign in to release the blocked payroll."
+    },
+    {
+      "label": "phishing",
+      "text": "Finance request: process wire transfer within 10 minutes and reply confidentially."
+    },
+    {
+      "label": "suspicious",
+      "text": "Unexpected external message asks you to review a payroll document in a shared portal."
+    },
+    {
+      "label": "suspicious",
+      "text": "Sender requests confirmation of payroll details with mild urgency and vague context."
+    },
+    {
+      "label": "suspicious",
+      "text": "Message contains a shortened link about a payroll review with little explanation."
+    },
+    {
+      "label": "safe",
+      "text": "Internal notice: the payroll maintenance window is scheduled and documented on the company portal."
+    },
+    {
+      "label": "safe",
+      "text": "Approved support ticket confirms the payroll update in the official helpdesk."
+    },
+    {
+      "label": "safe",
+      "text": "Security team posted the new payroll guidance in the internal knowledge base."
+    },
+    {
+      "label": "phishing",
+      "text": "Urgent action required: verify your HR portal password immediately through this link."
+    },
+    {
+      "label": "phishing",
+      "text": "Your HR portal will be suspended today unless you confirm your credentials now."
+    },
+    {
+      "label": "phishing",
+      "text": "Open the attached document and sign in to release the blocked HR portal."
+    },
+    {
+      "label": "phishing",
+      "text": "Finance request: process wire transfer within 10 minutes and reply confidentially."
+    },
+    {
+      "label": "suspicious",
+      "text": "Unexpected external message asks you to review a HR portal document in a shared portal."
+    },
+    {
+      "label": "suspicious",
+      "text": "Sender requests confirmation of HR portal details with mild urgency and vague context."
+    },
+    {
+      "label": "suspicious",
+      "text": "Message contains a shortened link about a HR portal review with little explanation."
+    },
+    {
+      "label": "safe",
+      "text": "Internal notice: the HR portal maintenance window is scheduled and documented on the company portal."
+    },
+    {
+      "label": "safe",
+      "text": "Approved support ticket confirms the HR portal update in the official helpdesk."
+    },
+    {
+      "label": "safe",
+      "text": "Security team posted the new HR portal guidance in the internal knowledge base."
+    },
+    {
+      "label": "phishing",
+      "text": "Urgent action required: verify your invoice system password immediately through this link."
+    },
+    {
+      "label": "phishing",
+      "text": "Your invoice system will be suspended today unless you confirm your credentials now."
+    },
+    {
+      "label": "phishing",
+      "text": "Open the attached document and sign in to release the blocked invoice system."
+    },
+    {
+      "label": "phishing",
+      "text": "Finance request: process wire transfer within 10 minutes and reply confidentially."
+    },
+    {
+      "label": "suspicious",
+      "text": "Unexpected external message asks you to review a invoice system document in a shared portal."
+    },
+    {
+      "label": "suspicious",
+      "text": "Sender requests confirmation of invoice system details with mild urgency and vague context."
+    },
+    {
+      "label": "suspicious",
+      "text": "Message contains a shortened link about a invoice system review with little explanation."
+    },
+    {
+      "label": "safe",
+      "text": "Internal notice: the invoice system maintenance window is scheduled and documented on the company portal."
+    },
+    {
+      "label": "safe",
+      "text": "Approved support ticket confirms the invoice system update in the official helpdesk."
+    },
+    {
+      "label": "safe",
+      "text": "Security team posted the new invoice system guidance in the internal knowledge base."
+    },
+    {
+      "label": "phishing",
+      "text": "Urgent action required: verify your SSO account password immediately through this link."
+    },
+    {
+      "label": "phishing",
+      "text": "Your SSO account will be suspended today unless you confirm your credentials now."
+    },
+    {
+      "label": "phishing",
+      "text": "Open the attached document and sign in to release the blocked SSO account."
+    },
+    {
+      "label": "phishing",
+      "text": "Finance request: process wire transfer within 10 minutes and reply confidentially."
+    },
+    {
+      "label": "suspicious",
+      "text": "Unexpected external message asks you to review a SSO account document in a shared portal."
+    },
+    {
+      "label": "suspicious",
+      "text": "Sender requests confirmation of SSO account details with mild urgency and vague context."
+    },
+    {
+      "label": "suspicious",
+      "text": "Message contains a shortened link about a SSO account review with little explanation."
+    },
+    {
+      "label": "safe",
+      "text": "Internal notice: the SSO account maintenance window is scheduled and documented on the company portal."
+    },
+    {
+      "label": "safe",
+      "text": "Approved support ticket confirms the SSO account update in the official helpdesk."
+    },
+    {
+      "label": "safe",
+      "text": "Security team posted the new SSO account guidance in the internal knowledge base."
+    },
+    {
+      "label": "phishing",
+      "text": "Finance request: process wire transfer within 10 minutes and reply confidentially."
+    },
+    {
+      "label": "phishing",
+      "text": "Finance request: process gift card purchase within 10 minutes and reply confidentially."
+    },
+    {
+      "label": "phishing",
+      "text": "Finance request: process invoice update within 10 minutes and reply confidentially."
+    },
+    {
+      "label": "phishing",
+      "text": "Finance request: process credential reset within 10 minutes and reply confidentially."
+    }
+  ],
+  "log_threat": [
+    {
+      "label": "high",
+      "text": "Failed password for admin from 45.33.12.9 repeated 30 times in 2 minutes followed by Accepted password."
+    },
+    {
+      "label": "high",
+      "text": "Web server spawned /bin/sh after POST request containing cmd=cat+/etc/passwd."
+    },
+    {
+      "label": "high",
+      "text": "Host began renaming thousands of files and deleting shadow copies."
+    },
+    {
+      "label": "high",
+      "text": "Service account downloaded 12GB to rare external destination at 03:14 UTC."
+    },
+    {
+      "label": "medium",
+      "text": "Ten failed login attempts for multiple users from one IP over 30 minutes."
+    },
+    {
+      "label": "medium",
+      "text": "Burst of DNS TXT requests with long random subdomains to one domain."
+    },
+    {
+      "label": "medium",
+      "text": "Application returned repeated SQL syntax errors after crafted query strings."
+    },
+    {
+      "label": "medium",
+      "text": "User approved MFA after 9 denied pushes from unfamiliar device."
+    },
+    {
+      "label": "low",
+      "text": "One failed login attempt followed by successful login from known office IP."
+    },
+    {
+      "label": "low",
+      "text": "Scheduled vulnerability scanner requested multiple HTTP endpoints during maintenance."
+    },
+    {
+      "label": "low",
+      "text": "Expected software update downloaded packages from approved repository."
+    },
+    {
+      "label": "low",
+      "text": "Routine backup process transferred encrypted archive to approved storage target."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for admin after 12 failed attempts from 45.33.12.9."
+    },
+    {
+      "label": "medium",
+      "text": "12 failed logins for many users from 45.33.12.9 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for admin followed by normal success from known IP 45.33.12.9."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for admin after 18 failed attempts from 45.33.12.9."
+    },
+    {
+      "label": "medium",
+      "text": "18 failed logins for many users from 45.33.12.9 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for admin followed by normal success from known IP 45.33.12.9."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for admin after 12 failed attempts from 198.51.100.7."
+    },
+    {
+      "label": "medium",
+      "text": "12 failed logins for many users from 198.51.100.7 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for admin followed by normal success from known IP 198.51.100.7."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for admin after 18 failed attempts from 198.51.100.7."
+    },
+    {
+      "label": "medium",
+      "text": "18 failed logins for many users from 198.51.100.7 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for admin followed by normal success from known IP 198.51.100.7."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for svc_backup after 12 failed attempts from 45.33.12.9."
+    },
+    {
+      "label": "medium",
+      "text": "12 failed logins for many users from 45.33.12.9 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for svc_backup followed by normal success from known IP 45.33.12.9."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for svc_backup after 18 failed attempts from 45.33.12.9."
+    },
+    {
+      "label": "medium",
+      "text": "18 failed logins for many users from 45.33.12.9 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for svc_backup followed by normal success from known IP 45.33.12.9."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for svc_backup after 12 failed attempts from 198.51.100.7."
+    },
+    {
+      "label": "medium",
+      "text": "12 failed logins for many users from 198.51.100.7 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for svc_backup followed by normal success from known IP 198.51.100.7."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for svc_backup after 18 failed attempts from 198.51.100.7."
+    },
+    {
+      "label": "medium",
+      "text": "18 failed logins for many users from 198.51.100.7 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for svc_backup followed by normal success from known IP 198.51.100.7."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for finance_user after 12 failed attempts from 45.33.12.9."
+    },
+    {
+      "label": "medium",
+      "text": "12 failed logins for many users from 45.33.12.9 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for finance_user followed by normal success from known IP 45.33.12.9."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for finance_user after 18 failed attempts from 45.33.12.9."
+    },
+    {
+      "label": "medium",
+      "text": "18 failed logins for many users from 45.33.12.9 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for finance_user followed by normal success from known IP 45.33.12.9."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for finance_user after 12 failed attempts from 198.51.100.7."
+    },
+    {
+      "label": "medium",
+      "text": "12 failed logins for many users from 198.51.100.7 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for finance_user followed by normal success from known IP 198.51.100.7."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for finance_user after 18 failed attempts from 198.51.100.7."
+    },
+    {
+      "label": "medium",
+      "text": "18 failed logins for many users from 198.51.100.7 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for finance_user followed by normal success from known IP 198.51.100.7."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for vpn_user after 12 failed attempts from 45.33.12.9."
+    },
+    {
+      "label": "medium",
+      "text": "12 failed logins for many users from 45.33.12.9 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for vpn_user followed by normal success from known IP 45.33.12.9."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for vpn_user after 18 failed attempts from 45.33.12.9."
+    },
+    {
+      "label": "medium",
+      "text": "18 failed logins for many users from 45.33.12.9 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for vpn_user followed by normal success from known IP 45.33.12.9."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for vpn_user after 12 failed attempts from 198.51.100.7."
+    },
+    {
+      "label": "medium",
+      "text": "12 failed logins for many users from 198.51.100.7 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for vpn_user followed by normal success from known IP 198.51.100.7."
+    },
+    {
+      "label": "high",
+      "text": "Accepted password for vpn_user after 18 failed attempts from 198.51.100.7."
+    },
+    {
+      "label": "medium",
+      "text": "18 failed logins for many users from 198.51.100.7 over 20 minutes."
+    },
+    {
+      "label": "low",
+      "text": "One failed login for vpn_user followed by normal success from known IP 198.51.100.7."
+    },
+    {
+      "label": "high",
+      "text": "Mass file encryption observed on web-01 with backup deletion."
+    },
+    {
+      "label": "low",
+      "text": "Approved scanner checked web-01 during maintenance."
+    },
+    {
+      "label": "low",
+      "text": "Normal backup copied archive from web-01 to approved target."
+    },
+    {
+      "label": "high",
+      "text": "Mass file encryption observed on db-02 with backup deletion."
+    },
+    {
+      "label": "low",
+      "text": "Approved scanner checked db-02 during maintenance."
+    },
+    {
+      "label": "low",
+      "text": "Normal backup copied archive from db-02 to approved target."
+    },
+    {
+      "label": "high",
+      "text": "Mass file encryption observed on mail-01 with backup deletion."
+    },
+    {
+      "label": "low",
+      "text": "Approved scanner checked mail-01 during maintenance."
+    },
+    {
+      "label": "low",
+      "text": "Normal backup copied archive from mail-01 to approved target."
+    },
+    {
+      "label": "high",
+      "text": "Mass file encryption observed on files-01 with backup deletion."
+    },
+    {
+      "label": "low",
+      "text": "Approved scanner checked files-01 during maintenance."
+    },
+    {
+      "label": "low",
+      "text": "Normal backup copied archive from files-01 to approved target."
+    }
+  ],
+  "attack_category": [
+    {
+      "label": "sql_injection",
+      "text": "Request contains union select and quote-heavy payload to login form."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Input uses OR 1=1 comment syntax to bypass authentication."
+    },
+    {
+      "label": "xss",
+      "text": "Comment field stores script tag and triggers alert on page view."
+    },
+    {
+      "label": "xss",
+      "text": "Reflected parameter injects javascript event handler into HTML response."
+    },
+    {
+      "label": "phishing",
+      "text": "Email asks user to confirm password and open urgent attachment."
+    },
+    {
+      "label": "phishing",
+      "text": "Spoofed sender requests gift cards and confidential reply."
+    },
+    {
+      "label": "brute_force",
+      "text": "Many repeated password failures from same source against one account."
+    },
+    {
+      "label": "brute_force",
+      "text": "Password spray attempts common password across hundreds of usernames."
+    },
+    {
+      "label": "ransomware",
+      "text": "Files renamed rapidly, ransom note dropped, backups disabled."
+    },
+    {
+      "label": "ransomware",
+      "text": "Mass encryption behavior with shadow copy deletion detected."
+    },
+    {
+      "label": "ssrf",
+      "text": "Backend requested cloud metadata endpoint from user-supplied URL parameter."
+    },
+    {
+      "label": "ssrf",
+      "text": "Image fetch feature caused server to connect to internal IP range."
+    },
+    {
+      "label": "command_injection",
+      "text": "Shell metacharacters in hostname input caused ping command execution."
+    },
+    {
+      "label": "command_injection",
+      "text": "User input passed to sh -c with semicolon and curl payload."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Same IP attempts breached email-password combos across many accounts."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Low success rate after large cross-account login attempt burst."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Request injects UNION SELECT into login form."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Input uses quote and OR 1=1 to bypass login form."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Request injects UNION SELECT into search endpoint."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Input uses quote and OR 1=1 to bypass search endpoint."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Request injects UNION SELECT into comment box."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Input uses quote and OR 1=1 to bypass comment box."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Request injects UNION SELECT into image fetcher."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Input uses quote and OR 1=1 to bypass image fetcher."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Request injects UNION SELECT into admin panel."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Input uses quote and OR 1=1 to bypass admin panel."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Request injects UNION SELECT into VPN portal."
+    },
+    {
+      "label": "sql_injection",
+      "text": "Input uses quote and OR 1=1 to bypass VPN portal."
+    },
+    {
+      "label": "xss",
+      "text": "Stored comment on login form contains script tag and browser callback."
+    },
+    {
+      "label": "xss",
+      "text": "Reflected parameter on login form injects event handler into HTML."
+    },
+    {
+      "label": "xss",
+      "text": "Stored comment on search endpoint contains script tag and browser callback."
+    },
+    {
+      "label": "xss",
+      "text": "Reflected parameter on search endpoint injects event handler into HTML."
+    },
+    {
+      "label": "xss",
+      "text": "Stored comment on comment box contains script tag and browser callback."
+    },
+    {
+      "label": "xss",
+      "text": "Reflected parameter on comment box injects event handler into HTML."
+    },
+    {
+      "label": "xss",
+      "text": "Stored comment on image fetcher contains script tag and browser callback."
+    },
+    {
+      "label": "xss",
+      "text": "Reflected parameter on image fetcher injects event handler into HTML."
+    },
+    {
+      "label": "xss",
+      "text": "Stored comment on admin panel contains script tag and browser callback."
+    },
+    {
+      "label": "xss",
+      "text": "Reflected parameter on admin panel injects event handler into HTML."
+    },
+    {
+      "label": "xss",
+      "text": "Stored comment on VPN portal contains script tag and browser callback."
+    },
+    {
+      "label": "xss",
+      "text": "Reflected parameter on VPN portal injects event handler into HTML."
+    },
+    {
+      "label": "phishing",
+      "text": "Message about login form asks user to verify password immediately."
+    },
+    {
+      "label": "phishing",
+      "text": "Spoofed sender pressures victim to open attachment for login form."
+    },
+    {
+      "label": "phishing",
+      "text": "Message about search endpoint asks user to verify password immediately."
+    },
+    {
+      "label": "phishing",
+      "text": "Spoofed sender pressures victim to open attachment for search endpoint."
+    },
+    {
+      "label": "phishing",
+      "text": "Message about comment box asks user to verify password immediately."
+    },
+    {
+      "label": "phishing",
+      "text": "Spoofed sender pressures victim to open attachment for comment box."
+    },
+    {
+      "label": "phishing",
+      "text": "Message about image fetcher asks user to verify password immediately."
+    },
+    {
+      "label": "phishing",
+      "text": "Spoofed sender pressures victim to open attachment for image fetcher."
+    },
+    {
+      "label": "phishing",
+      "text": "Message about admin panel asks user to verify password immediately."
+    },
+    {
+      "label": "phishing",
+      "text": "Spoofed sender pressures victim to open attachment for admin panel."
+    },
+    {
+      "label": "phishing",
+      "text": "Message about VPN portal asks user to verify password immediately."
+    },
+    {
+      "label": "phishing",
+      "text": "Spoofed sender pressures victim to open attachment for VPN portal."
+    },
+    {
+      "label": "brute_force",
+      "text": "Repeated password failures target login form from one source."
+    },
+    {
+      "label": "brute_force",
+      "text": "Common password sprayed against many login form accounts."
+    },
+    {
+      "label": "brute_force",
+      "text": "Repeated password failures target search endpoint from one source."
+    },
+    {
+      "label": "brute_force",
+      "text": "Common password sprayed against many search endpoint accounts."
+    },
+    {
+      "label": "brute_force",
+      "text": "Repeated password failures target comment box from one source."
+    },
+    {
+      "label": "brute_force",
+      "text": "Common password sprayed against many comment box accounts."
+    },
+    {
+      "label": "brute_force",
+      "text": "Repeated password failures target image fetcher from one source."
+    },
+    {
+      "label": "brute_force",
+      "text": "Common password sprayed against many image fetcher accounts."
+    },
+    {
+      "label": "brute_force",
+      "text": "Repeated password failures target admin panel from one source."
+    },
+    {
+      "label": "brute_force",
+      "text": "Common password sprayed against many admin panel accounts."
+    },
+    {
+      "label": "brute_force",
+      "text": "Repeated password failures target VPN portal from one source."
+    },
+    {
+      "label": "brute_force",
+      "text": "Common password sprayed against many VPN portal accounts."
+    },
+    {
+      "label": "ransomware",
+      "text": "login form shows mass encryption and ransom note creation."
+    },
+    {
+      "label": "ransomware",
+      "text": "login form deletes backups before rapid file renames."
+    },
+    {
+      "label": "ransomware",
+      "text": "search endpoint shows mass encryption and ransom note creation."
+    },
+    {
+      "label": "ransomware",
+      "text": "search endpoint deletes backups before rapid file renames."
+    },
+    {
+      "label": "ransomware",
+      "text": "comment box shows mass encryption and ransom note creation."
+    },
+    {
+      "label": "ransomware",
+      "text": "comment box deletes backups before rapid file renames."
+    },
+    {
+      "label": "ransomware",
+      "text": "image fetcher shows mass encryption and ransom note creation."
+    },
+    {
+      "label": "ransomware",
+      "text": "image fetcher deletes backups before rapid file renames."
+    },
+    {
+      "label": "ransomware",
+      "text": "admin panel shows mass encryption and ransom note creation."
+    },
+    {
+      "label": "ransomware",
+      "text": "admin panel deletes backups before rapid file renames."
+    },
+    {
+      "label": "ransomware",
+      "text": "VPN portal shows mass encryption and ransom note creation."
+    },
+    {
+      "label": "ransomware",
+      "text": "VPN portal deletes backups before rapid file renames."
+    },
+    {
+      "label": "ssrf",
+      "text": "login form fetch feature requested cloud metadata endpoint."
+    },
+    {
+      "label": "ssrf",
+      "text": "login form caused backend connection to internal IP address."
+    },
+    {
+      "label": "ssrf",
+      "text": "search endpoint fetch feature requested cloud metadata endpoint."
+    },
+    {
+      "label": "ssrf",
+      "text": "search endpoint caused backend connection to internal IP address."
+    },
+    {
+      "label": "ssrf",
+      "text": "comment box fetch feature requested cloud metadata endpoint."
+    },
+    {
+      "label": "ssrf",
+      "text": "comment box caused backend connection to internal IP address."
+    },
+    {
+      "label": "ssrf",
+      "text": "image fetcher fetch feature requested cloud metadata endpoint."
+    },
+    {
+      "label": "ssrf",
+      "text": "image fetcher caused backend connection to internal IP address."
+    },
+    {
+      "label": "ssrf",
+      "text": "admin panel fetch feature requested cloud metadata endpoint."
+    },
+    {
+      "label": "ssrf",
+      "text": "admin panel caused backend connection to internal IP address."
+    },
+    {
+      "label": "ssrf",
+      "text": "VPN portal fetch feature requested cloud metadata endpoint."
+    },
+    {
+      "label": "ssrf",
+      "text": "VPN portal caused backend connection to internal IP address."
+    },
+    {
+      "label": "command_injection",
+      "text": "login form input included semicolon and shell command."
+    },
+    {
+      "label": "command_injection",
+      "text": "login form passed user value into sh -c execution path."
+    },
+    {
+      "label": "command_injection",
+      "text": "search endpoint input included semicolon and shell command."
+    },
+    {
+      "label": "command_injection",
+      "text": "search endpoint passed user value into sh -c execution path."
+    },
+    {
+      "label": "command_injection",
+      "text": "comment box input included semicolon and shell command."
+    },
+    {
+      "label": "command_injection",
+      "text": "comment box passed user value into sh -c execution path."
+    },
+    {
+      "label": "command_injection",
+      "text": "image fetcher input included semicolon and shell command."
+    },
+    {
+      "label": "command_injection",
+      "text": "image fetcher passed user value into sh -c execution path."
+    },
+    {
+      "label": "command_injection",
+      "text": "admin panel input included semicolon and shell command."
+    },
+    {
+      "label": "command_injection",
+      "text": "admin panel passed user value into sh -c execution path."
+    },
+    {
+      "label": "command_injection",
+      "text": "VPN portal input included semicolon and shell command."
+    },
+    {
+      "label": "command_injection",
+      "text": "VPN portal passed user value into sh -c execution path."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Large login burst reuses leaked credentials against login form."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Many accounts on login form see low-success login attempts from one IP."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Large login burst reuses leaked credentials against search endpoint."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Many accounts on search endpoint see low-success login attempts from one IP."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Large login burst reuses leaked credentials against comment box."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Many accounts on comment box see low-success login attempts from one IP."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Large login burst reuses leaked credentials against image fetcher."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Many accounts on image fetcher see low-success login attempts from one IP."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Large login burst reuses leaked credentials against admin panel."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Many accounts on admin panel see low-success login attempts from one IP."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Large login burst reuses leaked credentials against VPN portal."
+    },
+    {
+      "label": "credential_stuffing",
+      "text": "Many accounts on VPN portal see low-success login attempts from one IP."
+    }
+  ],
+  "code_security": [
+    {
+      "label": "insecure",
+      "text": "query = f\"SELECT * FROM users WHERE id = '{user_id}'\""
+    },
+    {
+      "label": "insecure",
+      "text": "el.innerHTML = userComment"
+    },
+    {
+      "label": "insecure",
+      "text": "os.system('ping ' + host)"
+    },
+    {
+      "label": "insecure",
+      "text": "password = 'supersecret'"
+    },
+    {
+      "label": "insecure",
+      "text": "obj = pickle.loads(data)"
+    },
+    {
+      "label": "insecure",
+      "text": "return redirect(request.args['next'])"
+    },
+    {
+      "label": "secure",
+      "text": "cur.execute('SELECT * FROM users WHERE id = %s', (user_id,))"
+    },
+    {
+      "label": "secure",
+      "text": "el.textContent = userComment"
+    },
+    {
+      "label": "secure",
+      "text": "subprocess.run(['ping', host], check=True)"
+    },
+    {
+      "label": "secure",
+      "text": "password = os.environ['DB_PASSWORD']"
+    },
+    {
+      "label": "secure",
+      "text": "obj = json.loads(data)"
+    },
+    {
+      "label": "secure",
+      "text": "return redirect(validate_relative_path(request.args.get('next')))"
+    },
+    {
+      "label": "insecure",
+      "text": "cursor.execute(\"SELECT * FROM users WHERE email = '\" + email + \"'\")"
+    },
+    {
+      "label": "insecure",
+      "text": "response.write(request.getParameter(\"q\"))"
+    },
+    {
+      "label": "insecure",
+      "text": "system('ping ' + host)"
+    },
+    {
+      "label": "insecure",
+      "text": "secret = 'prod-token'"
+    },
+    {
+      "label": "insecure",
+      "text": "unserialize($_POST['data'])"
+    },
+    {
+      "label": "secure",
+      "text": "cursor.execute(\"SELECT * FROM users WHERE email = %s\", (email,))"
+    },
+    {
+      "label": "secure",
+      "text": "element.textContent = query"
+    },
+    {
+      "label": "secure",
+      "text": "subprocess.run(['ping', host], check=True)"
+    },
+    {
+      "label": "secure",
+      "text": "secret = os.environ['TOKEN']"
+    },
+    {
+      "label": "secure",
+      "text": "json.loads(request_body)"
+    }
+  ]
+}

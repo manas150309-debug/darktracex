@@ -1,0 +1,2524 @@
+{
+  "documents": [
+    {
+      "doc_key": "phishing-overview",
+      "title": "Phishing Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Phishing is a common cybersecurity threat in the email-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "phishing-detection-signals",
+      "title": "Phishing Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Phishing: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "phishing-triage-questions",
+      "title": "Phishing Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Phishing: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "phishing-log-patterns",
+      "title": "Phishing Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Phishing: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "phishing-containment",
+      "title": "Phishing Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Phishing: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "phishing-eradication",
+      "title": "Phishing Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Phishing: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "phishing-recovery",
+      "title": "Phishing Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Phishing: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "phishing-prevention",
+      "title": "Phishing Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Phishing: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "phishing-false-positives",
+      "title": "Phishing False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Phishing: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "phishing-siem-hunt",
+      "title": "Phishing SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Phishing: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "spear-phishing-overview",
+      "title": "Spear Phishing Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Spear Phishing is a common cybersecurity threat in the email-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "spear-phishing-detection-signals",
+      "title": "Spear Phishing Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Spear Phishing: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "spear-phishing-triage-questions",
+      "title": "Spear Phishing Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Spear Phishing: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "spear-phishing-log-patterns",
+      "title": "Spear Phishing Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Spear Phishing: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "spear-phishing-containment",
+      "title": "Spear Phishing Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Spear Phishing: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "spear-phishing-eradication",
+      "title": "Spear Phishing Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Spear Phishing: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "spear-phishing-recovery",
+      "title": "Spear Phishing Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Spear Phishing: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "spear-phishing-prevention",
+      "title": "Spear Phishing Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Spear Phishing: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "spear-phishing-false-positives",
+      "title": "Spear Phishing False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Spear Phishing: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "spear-phishing-siem-hunt",
+      "title": "Spear Phishing SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Spear Phishing: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "bec-overview",
+      "title": "Business Email Compromise Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Business Email Compromise is a common cybersecurity threat in the email-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "bec-detection-signals",
+      "title": "Business Email Compromise Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Business Email Compromise: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "bec-triage-questions",
+      "title": "Business Email Compromise Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Business Email Compromise: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "bec-log-patterns",
+      "title": "Business Email Compromise Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Business Email Compromise: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "bec-containment",
+      "title": "Business Email Compromise Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Business Email Compromise: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "bec-eradication",
+      "title": "Business Email Compromise Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Business Email Compromise: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "bec-recovery",
+      "title": "Business Email Compromise Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Business Email Compromise: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "bec-prevention",
+      "title": "Business Email Compromise Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Business Email Compromise: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "bec-false-positives",
+      "title": "Business Email Compromise False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Business Email Compromise: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "bec-siem-hunt",
+      "title": "Business Email Compromise SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Business Email Compromise: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "credential-stuffing-overview",
+      "title": "Credential Stuffing Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Credential Stuffing is a common cybersecurity threat in the identity-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "credential-stuffing-detection-signals",
+      "title": "Credential Stuffing Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Credential Stuffing: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "credential-stuffing-triage-questions",
+      "title": "Credential Stuffing Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Credential Stuffing: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "credential-stuffing-log-patterns",
+      "title": "Credential Stuffing Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Credential Stuffing: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "credential-stuffing-containment",
+      "title": "Credential Stuffing Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Credential Stuffing: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "credential-stuffing-eradication",
+      "title": "Credential Stuffing Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Credential Stuffing: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "credential-stuffing-recovery",
+      "title": "Credential Stuffing Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Credential Stuffing: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "credential-stuffing-prevention",
+      "title": "Credential Stuffing Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Credential Stuffing: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "credential-stuffing-false-positives",
+      "title": "Credential Stuffing False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Credential Stuffing: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "credential-stuffing-siem-hunt",
+      "title": "Credential Stuffing SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Credential Stuffing: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "password-spraying-overview",
+      "title": "Password Spraying Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Password Spraying is a common cybersecurity threat in the identity-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "password-spraying-detection-signals",
+      "title": "Password Spraying Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Password Spraying: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "password-spraying-triage-questions",
+      "title": "Password Spraying Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Password Spraying: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "password-spraying-log-patterns",
+      "title": "Password Spraying Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Password Spraying: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "password-spraying-containment",
+      "title": "Password Spraying Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Password Spraying: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "password-spraying-eradication",
+      "title": "Password Spraying Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Password Spraying: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "password-spraying-recovery",
+      "title": "Password Spraying Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Password Spraying: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "password-spraying-prevention",
+      "title": "Password Spraying Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Password Spraying: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "password-spraying-false-positives",
+      "title": "Password Spraying False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Password Spraying: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "password-spraying-siem-hunt",
+      "title": "Password Spraying SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Password Spraying: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "brute-force-overview",
+      "title": "Brute Force Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Brute Force is a common cybersecurity threat in the identity-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "brute-force-detection-signals",
+      "title": "Brute Force Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Brute Force: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "brute-force-triage-questions",
+      "title": "Brute Force Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Brute Force: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "brute-force-log-patterns",
+      "title": "Brute Force Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Brute Force: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "brute-force-containment",
+      "title": "Brute Force Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Brute Force: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "brute-force-eradication",
+      "title": "Brute Force Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Brute Force: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "brute-force-recovery",
+      "title": "Brute Force Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Brute Force: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "brute-force-prevention",
+      "title": "Brute Force Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Brute Force: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "brute-force-false-positives",
+      "title": "Brute Force False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Brute Force: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "brute-force-siem-hunt",
+      "title": "Brute Force SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Brute Force: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "mfa-fatigue-overview",
+      "title": "MFA Fatigue Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: MFA Fatigue is a common cybersecurity threat in the identity-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "mfa-fatigue-detection-signals",
+      "title": "MFA Fatigue Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for MFA Fatigue: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "mfa-fatigue-triage-questions",
+      "title": "MFA Fatigue Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for MFA Fatigue: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "mfa-fatigue-log-patterns",
+      "title": "MFA Fatigue Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for MFA Fatigue: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "mfa-fatigue-containment",
+      "title": "MFA Fatigue Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for MFA Fatigue: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "mfa-fatigue-eradication",
+      "title": "MFA Fatigue Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for MFA Fatigue: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "mfa-fatigue-recovery",
+      "title": "MFA Fatigue Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for MFA Fatigue: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "mfa-fatigue-prevention",
+      "title": "MFA Fatigue Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for MFA Fatigue: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "mfa-fatigue-false-positives",
+      "title": "MFA Fatigue False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for MFA Fatigue: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "mfa-fatigue-siem-hunt",
+      "title": "MFA Fatigue SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for MFA Fatigue: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "token-theft-overview",
+      "title": "Token Theft Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Token Theft is a common cybersecurity threat in the identity-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "token-theft-detection-signals",
+      "title": "Token Theft Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Token Theft: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "token-theft-triage-questions",
+      "title": "Token Theft Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Token Theft: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "token-theft-log-patterns",
+      "title": "Token Theft Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Token Theft: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "token-theft-containment",
+      "title": "Token Theft Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Token Theft: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "token-theft-eradication",
+      "title": "Token Theft Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Token Theft: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "token-theft-recovery",
+      "title": "Token Theft Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Token Theft: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "token-theft-prevention",
+      "title": "Token Theft Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Token Theft: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "token-theft-false-positives",
+      "title": "Token Theft False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Token Theft: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "token-theft-siem-hunt",
+      "title": "Token Theft SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Token Theft: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "sql-injection-overview",
+      "title": "SQL Injection Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: SQL Injection is a common cybersecurity threat in the application-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "sql-injection-detection-signals",
+      "title": "SQL Injection Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for SQL Injection: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "sql-injection-triage-questions",
+      "title": "SQL Injection Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for SQL Injection: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "sql-injection-log-patterns",
+      "title": "SQL Injection Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for SQL Injection: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "sql-injection-containment",
+      "title": "SQL Injection Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for SQL Injection: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "sql-injection-eradication",
+      "title": "SQL Injection Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for SQL Injection: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "sql-injection-recovery",
+      "title": "SQL Injection Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for SQL Injection: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "sql-injection-prevention",
+      "title": "SQL Injection Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for SQL Injection: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "sql-injection-false-positives",
+      "title": "SQL Injection False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for SQL Injection: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "sql-injection-siem-hunt",
+      "title": "SQL Injection SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for SQL Injection: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "xss-overview",
+      "title": "Cross-Site Scripting Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Cross-Site Scripting is a common cybersecurity threat in the application-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "xss-detection-signals",
+      "title": "Cross-Site Scripting Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Cross-Site Scripting: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "xss-triage-questions",
+      "title": "Cross-Site Scripting Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Cross-Site Scripting: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "xss-log-patterns",
+      "title": "Cross-Site Scripting Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Cross-Site Scripting: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "xss-containment",
+      "title": "Cross-Site Scripting Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Cross-Site Scripting: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "xss-eradication",
+      "title": "Cross-Site Scripting Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Cross-Site Scripting: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "xss-recovery",
+      "title": "Cross-Site Scripting Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Cross-Site Scripting: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "xss-prevention",
+      "title": "Cross-Site Scripting Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Cross-Site Scripting: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "xss-false-positives",
+      "title": "Cross-Site Scripting False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Cross-Site Scripting: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "xss-siem-hunt",
+      "title": "Cross-Site Scripting SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Cross-Site Scripting: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "csrf-overview",
+      "title": "Cross-Site Request Forgery Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Cross-Site Request Forgery is a common cybersecurity threat in the web-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "csrf-detection-signals",
+      "title": "Cross-Site Request Forgery Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Cross-Site Request Forgery: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "csrf-triage-questions",
+      "title": "Cross-Site Request Forgery Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Cross-Site Request Forgery: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "csrf-log-patterns",
+      "title": "Cross-Site Request Forgery Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Cross-Site Request Forgery: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "csrf-containment",
+      "title": "Cross-Site Request Forgery Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Cross-Site Request Forgery: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "csrf-eradication",
+      "title": "Cross-Site Request Forgery Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Cross-Site Request Forgery: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "csrf-recovery",
+      "title": "Cross-Site Request Forgery Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Cross-Site Request Forgery: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "csrf-prevention",
+      "title": "Cross-Site Request Forgery Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Cross-Site Request Forgery: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "csrf-false-positives",
+      "title": "Cross-Site Request Forgery False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Cross-Site Request Forgery: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "csrf-siem-hunt",
+      "title": "Cross-Site Request Forgery SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Cross-Site Request Forgery: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "command-injection-overview",
+      "title": "Command Injection Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Command Injection is a common cybersecurity threat in the application-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "command-injection-detection-signals",
+      "title": "Command Injection Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Command Injection: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "command-injection-triage-questions",
+      "title": "Command Injection Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Command Injection: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "command-injection-log-patterns",
+      "title": "Command Injection Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Command Injection: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "command-injection-containment",
+      "title": "Command Injection Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Command Injection: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "command-injection-eradication",
+      "title": "Command Injection Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Command Injection: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "command-injection-recovery",
+      "title": "Command Injection Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Command Injection: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "command-injection-prevention",
+      "title": "Command Injection Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Command Injection: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "command-injection-false-positives",
+      "title": "Command Injection False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Command Injection: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "command-injection-siem-hunt",
+      "title": "Command Injection SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Command Injection: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "path-traversal-overview",
+      "title": "Path Traversal Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Path Traversal is a common cybersecurity threat in the application-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "path-traversal-detection-signals",
+      "title": "Path Traversal Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Path Traversal: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "path-traversal-triage-questions",
+      "title": "Path Traversal Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Path Traversal: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "path-traversal-log-patterns",
+      "title": "Path Traversal Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Path Traversal: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "path-traversal-containment",
+      "title": "Path Traversal Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Path Traversal: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "path-traversal-eradication",
+      "title": "Path Traversal Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Path Traversal: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "path-traversal-recovery",
+      "title": "Path Traversal Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Path Traversal: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "path-traversal-prevention",
+      "title": "Path Traversal Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Path Traversal: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "path-traversal-false-positives",
+      "title": "Path Traversal False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Path Traversal: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "path-traversal-siem-hunt",
+      "title": "Path Traversal SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Path Traversal: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "ssrf-overview",
+      "title": "Server-Side Request Forgery Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Server-Side Request Forgery is a common cybersecurity threat in the application-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "ssrf-detection-signals",
+      "title": "Server-Side Request Forgery Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Server-Side Request Forgery: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "ssrf-triage-questions",
+      "title": "Server-Side Request Forgery Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Server-Side Request Forgery: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "ssrf-log-patterns",
+      "title": "Server-Side Request Forgery Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Server-Side Request Forgery: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "ssrf-containment",
+      "title": "Server-Side Request Forgery Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Server-Side Request Forgery: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "ssrf-eradication",
+      "title": "Server-Side Request Forgery Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Server-Side Request Forgery: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "ssrf-recovery",
+      "title": "Server-Side Request Forgery Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Server-Side Request Forgery: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "ssrf-prevention",
+      "title": "Server-Side Request Forgery Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Server-Side Request Forgery: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "ssrf-false-positives",
+      "title": "Server-Side Request Forgery False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Server-Side Request Forgery: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "ssrf-siem-hunt",
+      "title": "Server-Side Request Forgery SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Server-Side Request Forgery: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "xxe-overview",
+      "title": "XML External Entity Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: XML External Entity is a common cybersecurity threat in the application-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "xxe-detection-signals",
+      "title": "XML External Entity Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for XML External Entity: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "xxe-triage-questions",
+      "title": "XML External Entity Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for XML External Entity: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "xxe-log-patterns",
+      "title": "XML External Entity Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for XML External Entity: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "xxe-containment",
+      "title": "XML External Entity Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for XML External Entity: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "xxe-eradication",
+      "title": "XML External Entity Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for XML External Entity: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "xxe-recovery",
+      "title": "XML External Entity Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for XML External Entity: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "xxe-prevention",
+      "title": "XML External Entity Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for XML External Entity: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "xxe-false-positives",
+      "title": "XML External Entity False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for XML External Entity: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "xxe-siem-hunt",
+      "title": "XML External Entity SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for XML External Entity: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "insecure-deserialization-overview",
+      "title": "Insecure Deserialization Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Insecure Deserialization is a common cybersecurity threat in the application-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "insecure-deserialization-detection-signals",
+      "title": "Insecure Deserialization Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Insecure Deserialization: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "insecure-deserialization-triage-questions",
+      "title": "Insecure Deserialization Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Insecure Deserialization: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "insecure-deserialization-log-patterns",
+      "title": "Insecure Deserialization Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Insecure Deserialization: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "insecure-deserialization-containment",
+      "title": "Insecure Deserialization Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Insecure Deserialization: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "insecure-deserialization-eradication",
+      "title": "Insecure Deserialization Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Insecure Deserialization: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "insecure-deserialization-recovery",
+      "title": "Insecure Deserialization Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Insecure Deserialization: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "insecure-deserialization-prevention",
+      "title": "Insecure Deserialization Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Insecure Deserialization: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "insecure-deserialization-false-positives",
+      "title": "Insecure Deserialization False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Insecure Deserialization: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "insecure-deserialization-siem-hunt",
+      "title": "Insecure Deserialization SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Insecure Deserialization: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "rce-overview",
+      "title": "Remote Code Execution Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Remote Code Execution is a common cybersecurity threat in the application-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "rce-detection-signals",
+      "title": "Remote Code Execution Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Remote Code Execution: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "rce-triage-questions",
+      "title": "Remote Code Execution Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Remote Code Execution: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "rce-log-patterns",
+      "title": "Remote Code Execution Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Remote Code Execution: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "rce-containment",
+      "title": "Remote Code Execution Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Remote Code Execution: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "rce-eradication",
+      "title": "Remote Code Execution Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Remote Code Execution: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "rce-recovery",
+      "title": "Remote Code Execution Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Remote Code Execution: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "rce-prevention",
+      "title": "Remote Code Execution Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Remote Code Execution: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "rce-false-positives",
+      "title": "Remote Code Execution False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Remote Code Execution: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "rce-siem-hunt",
+      "title": "Remote Code Execution SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Remote Code Execution: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "privilege-escalation-overview",
+      "title": "Privilege Escalation Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Privilege Escalation is a common cybersecurity threat in the host-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "privilege-escalation-detection-signals",
+      "title": "Privilege Escalation Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Privilege Escalation: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "privilege-escalation-triage-questions",
+      "title": "Privilege Escalation Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Privilege Escalation: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "privilege-escalation-log-patterns",
+      "title": "Privilege Escalation Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Privilege Escalation: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "privilege-escalation-containment",
+      "title": "Privilege Escalation Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Privilege Escalation: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "privilege-escalation-eradication",
+      "title": "Privilege Escalation Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Privilege Escalation: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "privilege-escalation-recovery",
+      "title": "Privilege Escalation Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Privilege Escalation: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "privilege-escalation-prevention",
+      "title": "Privilege Escalation Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Privilege Escalation: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "privilege-escalation-false-positives",
+      "title": "Privilege Escalation False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Privilege Escalation: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "privilege-escalation-siem-hunt",
+      "title": "Privilege Escalation SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Privilege Escalation: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "web-shell-overview",
+      "title": "Web Shell Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Web Shell is a common cybersecurity threat in the application-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "web-shell-detection-signals",
+      "title": "Web Shell Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Web Shell: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "web-shell-triage-questions",
+      "title": "Web Shell Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Web Shell: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "web-shell-log-patterns",
+      "title": "Web Shell Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Web Shell: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "web-shell-containment",
+      "title": "Web Shell Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Web Shell: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "web-shell-eradication",
+      "title": "Web Shell Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Web Shell: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "web-shell-recovery",
+      "title": "Web Shell Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Web Shell: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "web-shell-prevention",
+      "title": "Web Shell Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Web Shell: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "web-shell-false-positives",
+      "title": "Web Shell False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Web Shell: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "web-shell-siem-hunt",
+      "title": "Web Shell SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Web Shell: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "malware-overview",
+      "title": "Malware Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Malware is a common cybersecurity threat in the endpoint-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "malware-detection-signals",
+      "title": "Malware Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Malware: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "malware-triage-questions",
+      "title": "Malware Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Malware: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "malware-log-patterns",
+      "title": "Malware Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Malware: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "malware-containment",
+      "title": "Malware Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Malware: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "malware-eradication",
+      "title": "Malware Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Malware: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "malware-recovery",
+      "title": "Malware Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Malware: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "malware-prevention",
+      "title": "Malware Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Malware: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "malware-false-positives",
+      "title": "Malware False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Malware: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "malware-siem-hunt",
+      "title": "Malware SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Malware: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "ransomware-overview",
+      "title": "Ransomware Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Ransomware is a common cybersecurity threat in the endpoint-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "ransomware-detection-signals",
+      "title": "Ransomware Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Ransomware: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "ransomware-triage-questions",
+      "title": "Ransomware Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Ransomware: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "ransomware-log-patterns",
+      "title": "Ransomware Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Ransomware: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "ransomware-containment",
+      "title": "Ransomware Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Ransomware: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "ransomware-eradication",
+      "title": "Ransomware Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Ransomware: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "ransomware-recovery",
+      "title": "Ransomware Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Ransomware: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "ransomware-prevention",
+      "title": "Ransomware Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Ransomware: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "ransomware-false-positives",
+      "title": "Ransomware False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Ransomware: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "ransomware-siem-hunt",
+      "title": "Ransomware SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Ransomware: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "spyware-overview",
+      "title": "Spyware Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Spyware is a common cybersecurity threat in the endpoint-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "spyware-detection-signals",
+      "title": "Spyware Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Spyware: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "spyware-triage-questions",
+      "title": "Spyware Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Spyware: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "spyware-log-patterns",
+      "title": "Spyware Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Spyware: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "spyware-containment",
+      "title": "Spyware Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Spyware: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "spyware-eradication",
+      "title": "Spyware Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Spyware: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "spyware-recovery",
+      "title": "Spyware Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Spyware: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "spyware-prevention",
+      "title": "Spyware Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Spyware: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "spyware-false-positives",
+      "title": "Spyware False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Spyware: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "spyware-siem-hunt",
+      "title": "Spyware SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Spyware: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "trojan-overview",
+      "title": "Trojan Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Trojan is a common cybersecurity threat in the endpoint-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "trojan-detection-signals",
+      "title": "Trojan Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Trojan: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "trojan-triage-questions",
+      "title": "Trojan Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Trojan: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "trojan-log-patterns",
+      "title": "Trojan Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Trojan: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "trojan-containment",
+      "title": "Trojan Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Trojan: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "trojan-eradication",
+      "title": "Trojan Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Trojan: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "trojan-recovery",
+      "title": "Trojan Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Trojan: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "trojan-prevention",
+      "title": "Trojan Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Trojan: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "trojan-false-positives",
+      "title": "Trojan False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Trojan: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "trojan-siem-hunt",
+      "title": "Trojan SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Trojan: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "worm-overview",
+      "title": "Worm Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Worm is a common cybersecurity threat in the network-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "worm-detection-signals",
+      "title": "Worm Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Worm: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "worm-triage-questions",
+      "title": "Worm Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Worm: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "worm-log-patterns",
+      "title": "Worm Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Worm: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "worm-containment",
+      "title": "Worm Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Worm: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "worm-eradication",
+      "title": "Worm Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Worm: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "worm-recovery",
+      "title": "Worm Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Worm: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "worm-prevention",
+      "title": "Worm Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Worm: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "worm-false-positives",
+      "title": "Worm False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Worm: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "worm-siem-hunt",
+      "title": "Worm SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Worm: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "botnet-overview",
+      "title": "Botnet Activity Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Botnet Activity is a common cybersecurity threat in the network-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "botnet-detection-signals",
+      "title": "Botnet Activity Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Botnet Activity: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "botnet-triage-questions",
+      "title": "Botnet Activity Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Botnet Activity: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "botnet-log-patterns",
+      "title": "Botnet Activity Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Botnet Activity: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "botnet-containment",
+      "title": "Botnet Activity Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Botnet Activity: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "botnet-eradication",
+      "title": "Botnet Activity Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Botnet Activity: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "botnet-recovery",
+      "title": "Botnet Activity Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Botnet Activity: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "botnet-prevention",
+      "title": "Botnet Activity Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Botnet Activity: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "botnet-false-positives",
+      "title": "Botnet Activity False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Botnet Activity: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "botnet-siem-hunt",
+      "title": "Botnet Activity SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Botnet Activity: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "ddos-overview",
+      "title": "Distributed Denial of Service Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Distributed Denial of Service is a common cybersecurity threat in the network-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "ddos-detection-signals",
+      "title": "Distributed Denial of Service Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Distributed Denial of Service: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "ddos-triage-questions",
+      "title": "Distributed Denial of Service Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Distributed Denial of Service: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "ddos-log-patterns",
+      "title": "Distributed Denial of Service Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Distributed Denial of Service: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "ddos-containment",
+      "title": "Distributed Denial of Service Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Distributed Denial of Service: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "ddos-eradication",
+      "title": "Distributed Denial of Service Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Distributed Denial of Service: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "ddos-recovery",
+      "title": "Distributed Denial of Service Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Distributed Denial of Service: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "ddos-prevention",
+      "title": "Distributed Denial of Service Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Distributed Denial of Service: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "ddos-false-positives",
+      "title": "Distributed Denial of Service False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Distributed Denial of Service: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "ddos-siem-hunt",
+      "title": "Distributed Denial of Service SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Distributed Denial of Service: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "mitm-overview",
+      "title": "Man-in-the-Middle Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Man-in-the-Middle is a common cybersecurity threat in the network-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "mitm-detection-signals",
+      "title": "Man-in-the-Middle Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Man-in-the-Middle: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "mitm-triage-questions",
+      "title": "Man-in-the-Middle Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Man-in-the-Middle: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "mitm-log-patterns",
+      "title": "Man-in-the-Middle Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Man-in-the-Middle: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "mitm-containment",
+      "title": "Man-in-the-Middle Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Man-in-the-Middle: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "mitm-eradication",
+      "title": "Man-in-the-Middle Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Man-in-the-Middle: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "mitm-recovery",
+      "title": "Man-in-the-Middle Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Man-in-the-Middle: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "mitm-prevention",
+      "title": "Man-in-the-Middle Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Man-in-the-Middle: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "mitm-false-positives",
+      "title": "Man-in-the-Middle False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Man-in-the-Middle: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "mitm-siem-hunt",
+      "title": "Man-in-the-Middle SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Man-in-the-Middle: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "dns-spoofing-overview",
+      "title": "DNS Spoofing Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: DNS Spoofing is a common cybersecurity threat in the network-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "dns-spoofing-detection-signals",
+      "title": "DNS Spoofing Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for DNS Spoofing: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "dns-spoofing-triage-questions",
+      "title": "DNS Spoofing Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for DNS Spoofing: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "dns-spoofing-log-patterns",
+      "title": "DNS Spoofing Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for DNS Spoofing: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "dns-spoofing-containment",
+      "title": "DNS Spoofing Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for DNS Spoofing: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "dns-spoofing-eradication",
+      "title": "DNS Spoofing Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for DNS Spoofing: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "dns-spoofing-recovery",
+      "title": "DNS Spoofing Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for DNS Spoofing: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "dns-spoofing-prevention",
+      "title": "DNS Spoofing Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for DNS Spoofing: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "dns-spoofing-false-positives",
+      "title": "DNS Spoofing False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for DNS Spoofing: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "dns-spoofing-siem-hunt",
+      "title": "DNS Spoofing SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for DNS Spoofing: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "arp-spoofing-overview",
+      "title": "ARP Spoofing Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: ARP Spoofing is a common cybersecurity threat in the network-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "arp-spoofing-detection-signals",
+      "title": "ARP Spoofing Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for ARP Spoofing: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "arp-spoofing-triage-questions",
+      "title": "ARP Spoofing Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for ARP Spoofing: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "arp-spoofing-log-patterns",
+      "title": "ARP Spoofing Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for ARP Spoofing: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "arp-spoofing-containment",
+      "title": "ARP Spoofing Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for ARP Spoofing: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "arp-spoofing-eradication",
+      "title": "ARP Spoofing Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for ARP Spoofing: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "arp-spoofing-recovery",
+      "title": "ARP Spoofing Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for ARP Spoofing: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "arp-spoofing-prevention",
+      "title": "ARP Spoofing Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for ARP Spoofing: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "arp-spoofing-false-positives",
+      "title": "ARP Spoofing False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for ARP Spoofing: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "arp-spoofing-siem-hunt",
+      "title": "ARP Spoofing SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for ARP Spoofing: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "dns-tunneling-overview",
+      "title": "DNS Tunneling Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: DNS Tunneling is a common cybersecurity threat in the network-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "dns-tunneling-detection-signals",
+      "title": "DNS Tunneling Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for DNS Tunneling: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "dns-tunneling-triage-questions",
+      "title": "DNS Tunneling Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for DNS Tunneling: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "dns-tunneling-log-patterns",
+      "title": "DNS Tunneling Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for DNS Tunneling: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "dns-tunneling-containment",
+      "title": "DNS Tunneling Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for DNS Tunneling: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "dns-tunneling-eradication",
+      "title": "DNS Tunneling Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for DNS Tunneling: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "dns-tunneling-recovery",
+      "title": "DNS Tunneling Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for DNS Tunneling: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "dns-tunneling-prevention",
+      "title": "DNS Tunneling Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for DNS Tunneling: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "dns-tunneling-false-positives",
+      "title": "DNS Tunneling False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for DNS Tunneling: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "dns-tunneling-siem-hunt",
+      "title": "DNS Tunneling SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for DNS Tunneling: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "beaconing-overview",
+      "title": "Beaconing Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Beaconing is a common cybersecurity threat in the network-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "beaconing-detection-signals",
+      "title": "Beaconing Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Beaconing: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "beaconing-triage-questions",
+      "title": "Beaconing Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Beaconing: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "beaconing-log-patterns",
+      "title": "Beaconing Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Beaconing: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "beaconing-containment",
+      "title": "Beaconing Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Beaconing: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "beaconing-eradication",
+      "title": "Beaconing Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Beaconing: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "beaconing-recovery",
+      "title": "Beaconing Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Beaconing: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "beaconing-prevention",
+      "title": "Beaconing Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Beaconing: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "beaconing-false-positives",
+      "title": "Beaconing False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Beaconing: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "beaconing-siem-hunt",
+      "title": "Beaconing SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Beaconing: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "data-exfiltration-overview",
+      "title": "Data Exfiltration Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Data Exfiltration is a common cybersecurity threat in the data-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "data-exfiltration-detection-signals",
+      "title": "Data Exfiltration Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Data Exfiltration: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "data-exfiltration-triage-questions",
+      "title": "Data Exfiltration Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Data Exfiltration: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "data-exfiltration-log-patterns",
+      "title": "Data Exfiltration Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Data Exfiltration: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "data-exfiltration-containment",
+      "title": "Data Exfiltration Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Data Exfiltration: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "data-exfiltration-eradication",
+      "title": "Data Exfiltration Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Data Exfiltration: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "data-exfiltration-recovery",
+      "title": "Data Exfiltration Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Data Exfiltration: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "data-exfiltration-prevention",
+      "title": "Data Exfiltration Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Data Exfiltration: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "data-exfiltration-false-positives",
+      "title": "Data Exfiltration False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Data Exfiltration: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "data-exfiltration-siem-hunt",
+      "title": "Data Exfiltration SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Data Exfiltration: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "supply-chain-overview",
+      "title": "Supply Chain Attack Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Supply Chain Attack is a common cybersecurity threat in the software-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "supply-chain-detection-signals",
+      "title": "Supply Chain Attack Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Supply Chain Attack: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "supply-chain-triage-questions",
+      "title": "Supply Chain Attack Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Supply Chain Attack: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "supply-chain-log-patterns",
+      "title": "Supply Chain Attack Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Supply Chain Attack: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "supply-chain-containment",
+      "title": "Supply Chain Attack Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Supply Chain Attack: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "supply-chain-eradication",
+      "title": "Supply Chain Attack Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Supply Chain Attack: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "supply-chain-recovery",
+      "title": "Supply Chain Attack Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Supply Chain Attack: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "supply-chain-prevention",
+      "title": "Supply Chain Attack Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Supply Chain Attack: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "supply-chain-false-positives",
+      "title": "Supply Chain Attack False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Supply Chain Attack: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "supply-chain-siem-hunt",
+      "title": "Supply Chain Attack SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Supply Chain Attack: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "insider-threat-overview",
+      "title": "Insider Threat Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Insider Threat is a common cybersecurity threat in the governance area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "insider-threat-detection-signals",
+      "title": "Insider Threat Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Insider Threat: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "insider-threat-triage-questions",
+      "title": "Insider Threat Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Insider Threat: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "insider-threat-log-patterns",
+      "title": "Insider Threat Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Insider Threat: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "insider-threat-containment",
+      "title": "Insider Threat Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Insider Threat: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "insider-threat-eradication",
+      "title": "Insider Threat Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Insider Threat: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "insider-threat-recovery",
+      "title": "Insider Threat Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Insider Threat: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "insider-threat-prevention",
+      "title": "Insider Threat Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Insider Threat: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "insider-threat-false-positives",
+      "title": "Insider Threat False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Insider Threat: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "insider-threat-siem-hunt",
+      "title": "Insider Threat SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Insider Threat: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "cloud-misconfig-overview",
+      "title": "Cloud Misconfiguration Abuse Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: Cloud Misconfiguration Abuse is a common cybersecurity threat in the cloud-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "cloud-misconfig-detection-signals",
+      "title": "Cloud Misconfiguration Abuse Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for Cloud Misconfiguration Abuse: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "cloud-misconfig-triage-questions",
+      "title": "Cloud Misconfiguration Abuse Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for Cloud Misconfiguration Abuse: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "cloud-misconfig-log-patterns",
+      "title": "Cloud Misconfiguration Abuse Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for Cloud Misconfiguration Abuse: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "cloud-misconfig-containment",
+      "title": "Cloud Misconfiguration Abuse Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for Cloud Misconfiguration Abuse: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "cloud-misconfig-eradication",
+      "title": "Cloud Misconfiguration Abuse Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for Cloud Misconfiguration Abuse: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "cloud-misconfig-recovery",
+      "title": "Cloud Misconfiguration Abuse Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for Cloud Misconfiguration Abuse: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "cloud-misconfig-prevention",
+      "title": "Cloud Misconfiguration Abuse Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for Cloud Misconfiguration Abuse: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "cloud-misconfig-false-positives",
+      "title": "Cloud Misconfiguration Abuse False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for Cloud Misconfiguration Abuse: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "cloud-misconfig-siem-hunt",
+      "title": "Cloud Misconfiguration Abuse SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for Cloud Misconfiguration Abuse: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    },
+    {
+      "doc_key": "api-abuse-overview",
+      "title": "API Abuse Overview",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Definition: API Abuse is a common cybersecurity threat in the application-security area. Analyst goal: identify scope, affected assets, and immediate containment priorities."
+    },
+    {
+      "doc_key": "api-abuse-detection-signals",
+      "title": "API Abuse Detection Signals",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Primary detection signals for API Abuse: authentication anomalies, suspicious request patterns, unusual process or network behavior, and deviations from the normal user or service baseline."
+    },
+    {
+      "doc_key": "api-abuse-triage-questions",
+      "title": "API Abuse Triage Questions",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Triage questions for API Abuse: when did it start, which assets are affected, which identities were involved, what telemetry confirms it, and whether containment can be applied without losing evidence."
+    },
+    {
+      "doc_key": "api-abuse-log-patterns",
+      "title": "API Abuse Log Patterns",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Useful log patterns for API Abuse: repeated failures, low-and-slow retries, odd user-agents, unusual status codes, process lineage anomalies, rare destinations, and event bursts near high-risk actions."
+    },
+    {
+      "doc_key": "api-abuse-containment",
+      "title": "API Abuse Containment",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Containment steps for API Abuse: isolate impacted accounts or hosts, block malicious indicators, disable risky paths, preserve logs, and stop further spread while minimizing business disruption."
+    },
+    {
+      "doc_key": "api-abuse-eradication",
+      "title": "API Abuse Eradication",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Eradication guidance for API Abuse: remove malicious artifacts, revoke exposed credentials or tokens, patch the exploited weakness, re-image if trust is lost, and validate that persistence is gone."
+    },
+    {
+      "doc_key": "api-abuse-recovery",
+      "title": "API Abuse Recovery",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Recovery steps for API Abuse: restore clean state, rotate secrets, validate monitoring coverage, test critical workflows, and watch for recurrence during a defined observation window."
+    },
+    {
+      "doc_key": "api-abuse-prevention",
+      "title": "API Abuse Prevention",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Prevention guidance for API Abuse: least privilege, secure defaults, MFA where relevant, logging, segmentation, validated input handling, patching, and user or admin awareness controls."
+    },
+    {
+      "doc_key": "api-abuse-false-positives",
+      "title": "API Abuse False Positives",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "False-positive review for API Abuse: compare against expected admin activity, known scanners, test automation, maintenance windows, and approved third-party integrations before escalation."
+    },
+    {
+      "doc_key": "api-abuse-siem-hunt",
+      "title": "API Abuse SIEM Hunt",
+      "category": "playbooks",
+      "source_url": "",
+      "content": "Hunt hypothesis for API Abuse: search for clustered indicators across identity, endpoint, and network telemetry, then pivot by host, user, IP, process, or destination to map the full timeline."
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "documents": [
+    {
+      "doc_key": "phishing",
+      "title": "Phishing",
+      "category": "email-security",
+      "source_url": "",
+      "content": "Attack: Phishing\nSummary: Fraudulent messages that trick users into revealing credentials or opening malicious links or files.\nDetection signals: Unexpected credential prompts, urgent language, spoofed domains, mismatched links, attachment pressure.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "spear-phishing",
+      "title": "Spear Phishing",
+      "category": "email-security",
+      "source_url": "",
+      "content": "Attack: Spear Phishing\nSummary: Targeted phishing tailored to a specific person, team, or organization.\nDetection signals: Context-rich lure, personalized content, impersonation of internal staff or vendors.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "bec",
+      "title": "Business Email Compromise",
+      "category": "email-security",
+      "source_url": "",
+      "content": "Attack: Business Email Compromise\nSummary: Social engineering aimed at fraudulent payments or sensitive business actions.\nDetection signals: Executive impersonation, invoice changes, payment urgency, mailbox-forwarding anomalies.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "credential-stuffing",
+      "title": "Credential Stuffing",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Attack: Credential Stuffing\nSummary: Automated login attempts using reused username/password pairs from previous breaches.\nDetection signals: High login volume across many accounts from few IPs, rapid failures followed by sparse successes.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "password-spraying",
+      "title": "Password Spraying",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Attack: Password Spraying\nSummary: Trying a small set of common passwords across many accounts to avoid lockouts.\nDetection signals: One password against many users, low-and-slow failures, broad account distribution.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "brute-force",
+      "title": "Brute Force",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Attack: Brute Force\nSummary: Repeated guessing of credentials for one or more accounts.\nDetection signals: Repeated failures on same account or from same source, increasing velocity, lockout triggers.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "mfa-fatigue",
+      "title": "MFA Fatigue",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Attack: MFA Fatigue\nSummary: Repeated MFA push prompts intended to coerce user approval.\nDetection signals: Burst of push prompts, odd hours, user-approved after many denials.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "token-theft",
+      "title": "Token Theft",
+      "category": "identity-security",
+      "source_url": "",
+      "content": "Attack: Token Theft\nSummary: Stealing session or refresh tokens to bypass password/MFA checks.\nDetection signals: Impossible travel with same session, refresh anomalies, sign-ins without password events.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "sqli",
+      "title": "SQL Injection",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Attack: SQL Injection\nSummary: Injecting SQL syntax into database queries constructed from untrusted input.\nDetection signals: Unexpected SQL errors, quote-based payloads, UNION/OR 1=1 patterns, auth bypass attempts.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "xss",
+      "title": "Cross-Site Scripting",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Attack: Cross-Site Scripting\nSummary: Injecting script into web content viewed by other users.\nDetection signals: Script tags or event handlers in parameters, stored content triggering outbound requests.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "csrf",
+      "title": "Cross-Site Request Forgery",
+      "category": "web-security",
+      "source_url": "",
+      "content": "Attack: Cross-Site Request Forgery\nSummary: Abusing an authenticated browser to perform unintended actions.\nDetection signals: State-changing requests without CSRF token or origin checks.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "command-injection",
+      "title": "Command Injection",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Attack: Command Injection\nSummary: Injecting OS shell syntax into server-side command execution.\nDetection signals: Unexpected shell metacharacters, new process trees, suspicious child processes.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "path-traversal",
+      "title": "Path Traversal",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Attack: Path Traversal\nSummary: Manipulating file paths to access unintended files.\nDetection signals: Requests containing ../, encoded traversal patterns, sensitive file reads.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "ssrf",
+      "title": "Server-Side Request Forgery",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Attack: Server-Side Request Forgery\nSummary: Forcing a server to make requests to unintended internal or external resources.\nDetection signals: Outbound requests to metadata endpoints, internal IPs, odd URL schemes.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "xxe",
+      "title": "XML External Entity",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Attack: XML External Entity\nSummary: Abusing unsafe XML parsing to read files or reach internal services.\nDetection signals: DOCTYPE/entity payloads, parser errors around external entities, unexpected outbound connections.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "deserialization",
+      "title": "Insecure Deserialization",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Attack: Insecure Deserialization\nSummary: Unsafe object deserialization leading to code execution or logic abuse.\nDetection signals: Serialized object markers in requests, gadget-chain crashes, unsafe deserializer use.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "rce",
+      "title": "Remote Code Execution",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Attack: Remote Code Execution\nSummary: Running attacker-controlled code on a target system.\nDetection signals: Unexpected interpreter processes, web app spawning shells, new services or files.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "priv-esc",
+      "title": "Privilege Escalation",
+      "category": "host-security",
+      "source_url": "",
+      "content": "Attack: Privilege Escalation\nSummary: Gaining higher privileges than originally granted.\nDetection signals: Sudo misuse, token abuse, new admin group membership, protected resource access.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "web-shell",
+      "title": "Web Shell",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Attack: Web Shell\nSummary: A server-side script that gives attackers remote command capability.\nDetection signals: Tiny newly uploaded scripts, rare POST activity, command execution signatures, odd child processes.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "malware",
+      "title": "Malware",
+      "category": "endpoint-security",
+      "source_url": "",
+      "content": "Attack: Malware\nSummary: Malicious software used for theft, disruption, or persistence.\nDetection signals: Persistence changes, suspicious startup entries, outbound C2 traffic, tamper attempts.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "ransomware",
+      "title": "Ransomware",
+      "category": "endpoint-security",
+      "source_url": "",
+      "content": "Attack: Ransomware\nSummary: Malware that encrypts or locks data for extortion.\nDetection signals: Mass file renames, shadow copy deletion, encryption bursts, ransom note artifacts.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "spyware",
+      "title": "Spyware",
+      "category": "endpoint-security",
+      "source_url": "",
+      "content": "Attack: Spyware\nSummary: Software that covertly collects sensitive information.\nDetection signals: Keylogging behavior, screen capture, unauthorized data exfiltration.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "trojan",
+      "title": "Trojan",
+      "category": "endpoint-security",
+      "source_url": "",
+      "content": "Attack: Trojan\nSummary: Malware disguised as legitimate software or files.\nDetection signals: Execution after lure download, masquerading names, unexpected network beacons.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "worm",
+      "title": "Worm",
+      "category": "network-security",
+      "source_url": "",
+      "content": "Attack: Worm\nSummary: Self-propagating malware that spreads across systems.\nDetection signals: Rapid lateral spread, repeated exploitation traffic, simultaneous host infections.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "botnet",
+      "title": "Botnet Activity",
+      "category": "network-security",
+      "source_url": "",
+      "content": "Attack: Botnet Activity\nSummary: Compromised hosts controlled as a group for attacks or abuse.\nDetection signals: Periodic beaconing, synchronized traffic, known C2 indicators.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "ddos",
+      "title": "Distributed Denial of Service",
+      "category": "network-security",
+      "source_url": "",
+      "content": "Attack: Distributed Denial of Service\nSummary: Overwhelming a service with traffic or requests.\nDetection signals: Traffic spikes, protocol abuse, resource exhaustion, service degradation.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "mitm",
+      "title": "Man-in-the-Middle",
+      "category": "network-security",
+      "source_url": "",
+      "content": "Attack: Man-in-the-Middle\nSummary: Intercepting or modifying traffic between parties.\nDetection signals: TLS downgrade signs, certificate mismatches, ARP anomalies, proxy insertion.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "dns-spoofing",
+      "title": "DNS Spoofing",
+      "category": "network-security",
+      "source_url": "",
+      "content": "Attack: DNS Spoofing\nSummary: Returning forged DNS answers to redirect traffic.\nDetection signals: Unexpected DNS responses, resolver inconsistency, suspicious TTL patterns.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "arp-spoofing",
+      "title": "ARP Spoofing",
+      "category": "network-security",
+      "source_url": "",
+      "content": "Attack: ARP Spoofing\nSummary: Poisoning local network ARP caches to intercept traffic.\nDetection signals: MAC changes for same gateway IP, duplicate ARP replies, packet path anomalies.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "dns-tunneling",
+      "title": "DNS Tunneling",
+      "category": "network-security",
+      "source_url": "",
+      "content": "Attack: DNS Tunneling\nSummary: Using DNS queries/responses to move data or C2 traffic.\nDetection signals: Long random subdomains, high TXT query volume, unusual entropy, beacon cadence.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "beaconing",
+      "title": "Beaconing",
+      "category": "network-security",
+      "source_url": "",
+      "content": "Attack: Beaconing\nSummary: Regular outbound check-ins to attacker-controlled infrastructure.\nDetection signals: Low-and-slow periodic traffic, uniform intervals, repeated domains or IPs.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "data-exfil",
+      "title": "Data Exfiltration",
+      "category": "data-security",
+      "source_url": "",
+      "content": "Attack: Data Exfiltration\nSummary: Unauthorized transfer of sensitive data out of the environment.\nDetection signals: Large outbound transfers, rare destinations, compressed/encrypted archives, staging files.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "supply-chain",
+      "title": "Supply Chain Attack",
+      "category": "software-security",
+      "source_url": "",
+      "content": "Attack: Supply Chain Attack\nSummary: Compromise through dependencies, vendors, or build pipelines.\nDetection signals: Unexpected package updates, signature mismatches, build artifact drift.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "insider-threat",
+      "title": "Insider Threat",
+      "category": "governance",
+      "source_url": "",
+      "content": "Attack: Insider Threat\nSummary: Malicious or negligent activity by a trusted internal user.\nDetection signals: Access outside role, unusual downloads, after-hours actions, policy bypass.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "cloud-misconfig",
+      "title": "Cloud Misconfiguration Abuse",
+      "category": "cloud-security",
+      "source_url": "",
+      "content": "Attack: Cloud Misconfiguration Abuse\nSummary: Exposure or compromise caused by insecure cloud settings.\nDetection signals: Public buckets, overly broad IAM, disabled logging, open admin endpoints.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "api-abuse",
+      "title": "API Abuse",
+      "category": "application-security",
+      "source_url": "",
+      "content": "Attack: API Abuse\nSummary: Misuse of APIs for scraping, privilege bypass, or resource exhaustion.\nDetection signals: High request burst, missing auth checks, object enumeration, quota evasion.\nDefensive response: validate logs, tighten authentication or access controls, contain affected systems, preserve evidence, and monitor for recurrence."
+    },
+    {
+      "doc_key": "detect-phishing",
+      "title": "Detecting Phishing",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Look for urgent language, spoofed sender domains, credential prompts, payment pressure, unexpected attachments, and displayed links that differ from actual destinations."
+    },
+    {
+      "doc_key": "detect-credential-stuffing",
+      "title": "Detecting Credential Stuffing",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Correlate high authentication failure rates across many accounts from limited source IPs, then look for a small number of successes using the same infrastructure."
+    },
+    {
+      "doc_key": "detect-password-spraying",
+      "title": "Detecting Password Spraying",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Alert when the same password pattern or same source hits many usernames with low failure count per user over an extended window."
+    },
+    {
+      "doc_key": "detect-bruteforce",
+      "title": "Detecting Brute Force",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Track repeated authentication failures on the same account, especially when followed by account lockout, MFA prompts, or eventual success."
+    },
+    {
+      "doc_key": "detect-mfa-fatigue",
+      "title": "Detecting MFA Fatigue",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Flag many denied MFA prompts followed by a single approval, especially from new devices or foreign geographies."
+    },
+    {
+      "doc_key": "detect-sqli",
+      "title": "Detecting SQL Injection",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Inspect logs and WAF events for quote-heavy payloads, UNION/SELECT markers, comment operators, OR 1=1 patterns, and sudden SQL parser errors."
+    },
+    {
+      "doc_key": "detect-xss",
+      "title": "Detecting XSS",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Monitor for script tags, event handlers, javascript: URIs, reflected parameters, and outbound browser requests triggered by viewed content."
+    },
+    {
+      "doc_key": "detect-ssrf",
+      "title": "Detecting SSRF",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Alert on server-side outbound requests to metadata endpoints, localhost-like resources, internal ranges, and uncommon schemes requested by user-controlled parameters."
+    },
+    {
+      "doc_key": "detect-command-injection",
+      "title": "Detecting Command Injection",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Correlate user-supplied input containing shell metacharacters with new child processes, shell invocation, or abnormal process lineage."
+    },
+    {
+      "doc_key": "detect-path-traversal",
+      "title": "Detecting Path Traversal",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Search request logs for ../, encoded traversal strings, access to config or passwd-like files, and repeated 403/404 patterns near file endpoints."
+    },
+    {
+      "doc_key": "detect-rce",
+      "title": "Detecting Remote Code Execution",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Alert on web-facing services spawning shells, interpreters, compilers, or network tools unexpectedly, especially after crafted HTTP requests."
+    },
+    {
+      "doc_key": "detect-webshell",
+      "title": "Detecting Web Shells",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Watch for newly written executable scripts in web roots, rare POSTs to small files, and web servers creating child shell processes."
+    },
+    {
+      "doc_key": "detect-ransomware",
+      "title": "Detecting Ransomware",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Detect mass file modifications, extension changes, shadow copy deletion, high entropy writes, and disabling of security controls."
+    },
+    {
+      "doc_key": "detect-malware-beaconing",
+      "title": "Detecting Malware Beaconing",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Look for periodic outbound connections with regular intervals, low data volumes, and repeated destinations or JA3-like fingerprints."
+    },
+    {
+      "doc_key": "detect-dns-tunneling",
+      "title": "Detecting DNS Tunneling",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Identify very long or random-looking subdomains, unusual TXT activity, persistent NXDOMAIN bursts, and high-entropy labels."
+    },
+    {
+      "doc_key": "detect-ddos",
+      "title": "Detecting DDoS",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Measure abnormal traffic spikes, protocol-specific floods, elevated error rates, and saturation of CPU, bandwidth, or connection tables."
+    },
+    {
+      "doc_key": "detect-data-exfil",
+      "title": "Detecting Data Exfiltration",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Flag large outbound transfers, compressed archive creation, movement to rare destinations, and off-hours downloads from sensitive sources."
+    },
+    {
+      "doc_key": "detect-insider-threat",
+      "title": "Detecting Insider Threat",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Correlate unusual data access, broad searches, privilege misuse, removable media use, and after-hours activity by trusted users."
+    },
+    {
+      "doc_key": "detect-cloud-abuse",
+      "title": "Detecting Cloud Abuse",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Audit for public exposure, IAM drift, disabled logging, new access keys, role assumptions, and suspicious API call bursts."
+    },
+    {
+      "doc_key": "detect-token-theft",
+      "title": "Detecting Token Theft",
+      "category": "detection-rules",
+      "source_url": "",
+      "content": "Look for session reuse from impossible travel locations, browser fingerprint drift, refresh anomalies, and access without normal password events."
+    },
+    {
+      "doc_key": "cyber-attack-taxonomy",
+      "title": "Common Cyber Attack Categories",
+      "category": "taxonomy",
+      "source_url": "",
+      "content": "Phishing, spear phishing, business email compromise, credential stuffing, password spraying, brute force, MFA fatigue, token theft, SQL injection, XSS, CSRF, command injection, path traversal, SSRF, XXE, insecure deserialization, RCE, privilege escalation, web shells, malware, ransomware, spyware, trojans, worms, botnets, DDoS, man-in-the-middle, DNS spoofing, ARP spoofing, DNS tunneling, beaconing, data exfiltration, supply chain attacks, insider threats, cloud misconfiguration abuse, and API abuse."
+    }
+  ]
+}

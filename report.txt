@@ -1,0 +1,60 @@
+DarkTraceX Easy Report
+
+What this project is:
+This is a local cybersecurity helper. It runs on your own machine. It does not need a cloud API key for normal use.
+
+What it can do:
+1. Chat with a local AI model.
+2. Search a large offline cybersecurity knowledge base.
+3. Show secure and insecure code examples.
+4. Help classify phishing-style messages.
+5. Help rate suspicious log activity.
+6. List attack types and detection ideas.
+
+What was added:
+- A local Ollama model
+- More than 500 knowledge entries in the SQLite database
+- 100 insecure-to-secure code examples
+- Cyber attack categories
+- Detection rules
+- Attack playbooks
+- Local pattern-learning classifiers
+
+What the local learning part does:
+It learns simple text patterns from defensive examples.
+It can classify:
+- phishing email text
+- suspicious logs
+- attack categories
+- secure vs insecure code snippets
+
+Why this is useful:
+- It works without a cloud API key
+- It keeps your data local
+- It gives faster answers for common defensive questions
+- It has a growing offline knowledge base
+- It can still help even if the chat model is weak on a specific prompt
+
+Current verified status:
+- The app runs locally at http://127.0.0.1:8000
+- The database has more than 500 knowledge documents
+- The phishing classifier works
+- The log threat classifier works
+- The code example search works
+- The cyber attack list query works
+
+Limits:
+- This is a defensive system, not an offensive hacking system
+- The local small model can still be imperfect
+- The local classifiers are simple and pattern-based, not advanced deep neural models
+- Some website checks depend on local network conditions
+
+Best use:
+- secure coding help
+- phishing review
+- suspicious log review
+- attack type lookup
+- quick offline cybersecurity reference
+
+Plain conclusion:
+This project is now a stronger local defensive cybersecurity assistant. It has a much larger knowledge base, direct code-fix retrieval, and local text classification for important blue-team tasks.

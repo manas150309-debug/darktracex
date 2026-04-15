@@ -1,0 +1,704 @@
+{
+  "documents": [
+    {
+      "doc_key": "phishing-example-1",
+      "title": "Phishing Example 1",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Payroll account issue\nExample text: Urgent: your Payroll account issue requires immediate action. Sign in now using this link and confirm your password.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-2",
+      "title": "Phishing Example 2",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Payroll account issue\nExample text: Your Payroll account issue will be suspended today unless you verify your credentials immediately.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-3",
+      "title": "Phishing Example 3",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Payroll account issue\nExample text: Open the attached file to resolve the Payroll account issue problem and log in when prompted.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-4",
+      "title": "Phishing Example 4",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Payroll account issue\nExample text: We detected unusual activity in your Payroll account issue. Re-enter your password and MFA code to secure it.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-5",
+      "title": "Phishing Example 5",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Payroll account issue\nExample text: A senior manager needs you to process the Payroll account issue request within 10 minutes and reply confidentially.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-6",
+      "title": "Phishing Example 6",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Payroll account issue\nExample text: Your Payroll account issue is pending. Use the secure portal below to verify account details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-7",
+      "title": "Phishing Example 7",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Payroll account issue\nExample text: Important: the Payroll account issue document was shared with you. Review it and authenticate to continue.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-8",
+      "title": "Phishing Example 8",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Payroll account issue\nExample text: Final warning: your Payroll account issue access expires today. Update credentials to avoid lockout.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-9",
+      "title": "Phishing Example 9",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Payroll account issue\nExample text: The company security team needs you to confirm your Payroll account issue login right away.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-10",
+      "title": "Phishing Example 10",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Payroll account issue\nExample text: Your payment related to Payroll account issue is blocked. Sign in and confirm your details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-11",
+      "title": "Phishing Example 11",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: VPN access problem\nExample text: Urgent: your VPN access problem requires immediate action. Sign in now using this link and confirm your password.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-12",
+      "title": "Phishing Example 12",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: VPN access problem\nExample text: Your VPN access problem will be suspended today unless you verify your credentials immediately.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-13",
+      "title": "Phishing Example 13",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: VPN access problem\nExample text: Open the attached file to resolve the VPN access problem problem and log in when prompted.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-14",
+      "title": "Phishing Example 14",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: VPN access problem\nExample text: We detected unusual activity in your VPN access problem. Re-enter your password and MFA code to secure it.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-15",
+      "title": "Phishing Example 15",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: VPN access problem\nExample text: A senior manager needs you to process the VPN access problem request within 10 minutes and reply confidentially.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-16",
+      "title": "Phishing Example 16",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: VPN access problem\nExample text: Your VPN access problem is pending. Use the secure portal below to verify account details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-17",
+      "title": "Phishing Example 17",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: VPN access problem\nExample text: Important: the VPN access problem document was shared with you. Review it and authenticate to continue.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-18",
+      "title": "Phishing Example 18",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: VPN access problem\nExample text: Final warning: your VPN access problem access expires today. Update credentials to avoid lockout.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-19",
+      "title": "Phishing Example 19",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: VPN access problem\nExample text: The company security team needs you to confirm your VPN access problem login right away.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-20",
+      "title": "Phishing Example 20",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: VPN access problem\nExample text: Your payment related to VPN access problem is blocked. Sign in and confirm your details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-21",
+      "title": "Phishing Example 21",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Mailbox storage warning\nExample text: Urgent: your Mailbox storage warning requires immediate action. Sign in now using this link and confirm your password.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-22",
+      "title": "Phishing Example 22",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Mailbox storage warning\nExample text: Your Mailbox storage warning will be suspended today unless you verify your credentials immediately.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-23",
+      "title": "Phishing Example 23",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Mailbox storage warning\nExample text: Open the attached file to resolve the Mailbox storage warning problem and log in when prompted.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-24",
+      "title": "Phishing Example 24",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Mailbox storage warning\nExample text: We detected unusual activity in your Mailbox storage warning. Re-enter your password and MFA code to secure it.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-25",
+      "title": "Phishing Example 25",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Mailbox storage warning\nExample text: A senior manager needs you to process the Mailbox storage warning request within 10 minutes and reply confidentially.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-26",
+      "title": "Phishing Example 26",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Mailbox storage warning\nExample text: Your Mailbox storage warning is pending. Use the secure portal below to verify account details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-27",
+      "title": "Phishing Example 27",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Mailbox storage warning\nExample text: Important: the Mailbox storage warning document was shared with you. Review it and authenticate to continue.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-28",
+      "title": "Phishing Example 28",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Mailbox storage warning\nExample text: Final warning: your Mailbox storage warning access expires today. Update credentials to avoid lockout.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-29",
+      "title": "Phishing Example 29",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Mailbox storage warning\nExample text: The company security team needs you to confirm your Mailbox storage warning login right away.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-30",
+      "title": "Phishing Example 30",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Mailbox storage warning\nExample text: Your payment related to Mailbox storage warning is blocked. Sign in and confirm your details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-31",
+      "title": "Phishing Example 31",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Invoice review needed\nExample text: Urgent: your Invoice review needed requires immediate action. Sign in now using this link and confirm your password.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-32",
+      "title": "Phishing Example 32",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Invoice review needed\nExample text: Your Invoice review needed will be suspended today unless you verify your credentials immediately.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-33",
+      "title": "Phishing Example 33",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Invoice review needed\nExample text: Open the attached file to resolve the Invoice review needed problem and log in when prompted.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-34",
+      "title": "Phishing Example 34",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Invoice review needed\nExample text: We detected unusual activity in your Invoice review needed. Re-enter your password and MFA code to secure it.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-35",
+      "title": "Phishing Example 35",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Invoice review needed\nExample text: A senior manager needs you to process the Invoice review needed request within 10 minutes and reply confidentially.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-36",
+      "title": "Phishing Example 36",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Invoice review needed\nExample text: Your Invoice review needed is pending. Use the secure portal below to verify account details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-37",
+      "title": "Phishing Example 37",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Invoice review needed\nExample text: Important: the Invoice review needed document was shared with you. Review it and authenticate to continue.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-38",
+      "title": "Phishing Example 38",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Invoice review needed\nExample text: Final warning: your Invoice review needed access expires today. Update credentials to avoid lockout.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-39",
+      "title": "Phishing Example 39",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Invoice review needed\nExample text: The company security team needs you to confirm your Invoice review needed login right away.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-40",
+      "title": "Phishing Example 40",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Invoice review needed\nExample text: Your payment related to Invoice review needed is blocked. Sign in and confirm your details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-41",
+      "title": "Phishing Example 41",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Bank verification\nExample text: Urgent: your Bank verification requires immediate action. Sign in now using this link and confirm your password.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-42",
+      "title": "Phishing Example 42",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Bank verification\nExample text: Your Bank verification will be suspended today unless you verify your credentials immediately.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-43",
+      "title": "Phishing Example 43",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Bank verification\nExample text: Open the attached file to resolve the Bank verification problem and log in when prompted.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-44",
+      "title": "Phishing Example 44",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Bank verification\nExample text: We detected unusual activity in your Bank verification. Re-enter your password and MFA code to secure it.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-45",
+      "title": "Phishing Example 45",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Bank verification\nExample text: A senior manager needs you to process the Bank verification request within 10 minutes and reply confidentially.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-46",
+      "title": "Phishing Example 46",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Bank verification\nExample text: Your Bank verification is pending. Use the secure portal below to verify account details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-47",
+      "title": "Phishing Example 47",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Bank verification\nExample text: Important: the Bank verification document was shared with you. Review it and authenticate to continue.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-48",
+      "title": "Phishing Example 48",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Bank verification\nExample text: Final warning: your Bank verification access expires today. Update credentials to avoid lockout.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-49",
+      "title": "Phishing Example 49",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Bank verification\nExample text: The company security team needs you to confirm your Bank verification login right away.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-50",
+      "title": "Phishing Example 50",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Bank verification\nExample text: Your payment related to Bank verification is blocked. Sign in and confirm your details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-51",
+      "title": "Phishing Example 51",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Executive gift card request\nExample text: Urgent: your Executive gift card request requires immediate action. Sign in now using this link and confirm your password.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-52",
+      "title": "Phishing Example 52",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Executive gift card request\nExample text: Your Executive gift card request will be suspended today unless you verify your credentials immediately.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-53",
+      "title": "Phishing Example 53",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Executive gift card request\nExample text: Open the attached file to resolve the Executive gift card request problem and log in when prompted.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-54",
+      "title": "Phishing Example 54",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Executive gift card request\nExample text: We detected unusual activity in your Executive gift card request. Re-enter your password and MFA code to secure it.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-55",
+      "title": "Phishing Example 55",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Executive gift card request\nExample text: A senior manager needs you to process the Executive gift card request request within 10 minutes and reply confidentially.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-56",
+      "title": "Phishing Example 56",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Executive gift card request\nExample text: Your Executive gift card request is pending. Use the secure portal below to verify account details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-57",
+      "title": "Phishing Example 57",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Executive gift card request\nExample text: Important: the Executive gift card request document was shared with you. Review it and authenticate to continue.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-58",
+      "title": "Phishing Example 58",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Executive gift card request\nExample text: Final warning: your Executive gift card request access expires today. Update credentials to avoid lockout.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-59",
+      "title": "Phishing Example 59",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Executive gift card request\nExample text: The company security team needs you to confirm your Executive gift card request login right away.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-60",
+      "title": "Phishing Example 60",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Executive gift card request\nExample text: Your payment related to Executive gift card request is blocked. Sign in and confirm your details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-61",
+      "title": "Phishing Example 61",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Security verification\nExample text: Urgent: your Security verification requires immediate action. Sign in now using this link and confirm your password.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-62",
+      "title": "Phishing Example 62",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Security verification\nExample text: Your Security verification will be suspended today unless you verify your credentials immediately.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-63",
+      "title": "Phishing Example 63",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Security verification\nExample text: Open the attached file to resolve the Security verification problem and log in when prompted.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-64",
+      "title": "Phishing Example 64",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Security verification\nExample text: We detected unusual activity in your Security verification. Re-enter your password and MFA code to secure it.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-65",
+      "title": "Phishing Example 65",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Security verification\nExample text: A senior manager needs you to process the Security verification request within 10 minutes and reply confidentially.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-66",
+      "title": "Phishing Example 66",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Security verification\nExample text: Your Security verification is pending. Use the secure portal below to verify account details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-67",
+      "title": "Phishing Example 67",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Security verification\nExample text: Important: the Security verification document was shared with you. Review it and authenticate to continue.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-68",
+      "title": "Phishing Example 68",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Security verification\nExample text: Final warning: your Security verification access expires today. Update credentials to avoid lockout.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-69",
+      "title": "Phishing Example 69",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Security verification\nExample text: The company security team needs you to confirm your Security verification login right away.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-70",
+      "title": "Phishing Example 70",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Security verification\nExample text: Your payment related to Security verification is blocked. Sign in and confirm your details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-71",
+      "title": "Phishing Example 71",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Package delivery notice\nExample text: Urgent: your Package delivery notice requires immediate action. Sign in now using this link and confirm your password.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-72",
+      "title": "Phishing Example 72",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Package delivery notice\nExample text: Your Package delivery notice will be suspended today unless you verify your credentials immediately.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-73",
+      "title": "Phishing Example 73",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Package delivery notice\nExample text: Open the attached file to resolve the Package delivery notice problem and log in when prompted.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-74",
+      "title": "Phishing Example 74",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Package delivery notice\nExample text: We detected unusual activity in your Package delivery notice. Re-enter your password and MFA code to secure it.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-75",
+      "title": "Phishing Example 75",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Package delivery notice\nExample text: A senior manager needs you to process the Package delivery notice request within 10 minutes and reply confidentially.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-76",
+      "title": "Phishing Example 76",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Package delivery notice\nExample text: Your Package delivery notice is pending. Use the secure portal below to verify account details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-77",
+      "title": "Phishing Example 77",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Package delivery notice\nExample text: Important: the Package delivery notice document was shared with you. Review it and authenticate to continue.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-78",
+      "title": "Phishing Example 78",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Package delivery notice\nExample text: Final warning: your Package delivery notice access expires today. Update credentials to avoid lockout.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-79",
+      "title": "Phishing Example 79",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Package delivery notice\nExample text: The company security team needs you to confirm your Package delivery notice login right away.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-80",
+      "title": "Phishing Example 80",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Package delivery notice\nExample text: Your payment related to Package delivery notice is blocked. Sign in and confirm your details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-81",
+      "title": "Phishing Example 81",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: HR portal update\nExample text: Urgent: your HR portal update requires immediate action. Sign in now using this link and confirm your password.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-82",
+      "title": "Phishing Example 82",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: HR portal update\nExample text: Your HR portal update will be suspended today unless you verify your credentials immediately.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-83",
+      "title": "Phishing Example 83",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: HR portal update\nExample text: Open the attached file to resolve the HR portal update problem and log in when prompted.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-84",
+      "title": "Phishing Example 84",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: HR portal update\nExample text: We detected unusual activity in your HR portal update. Re-enter your password and MFA code to secure it.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-85",
+      "title": "Phishing Example 85",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: HR portal update\nExample text: A senior manager needs you to process the HR portal update request within 10 minutes and reply confidentially.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-86",
+      "title": "Phishing Example 86",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: HR portal update\nExample text: Your HR portal update is pending. Use the secure portal below to verify account details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-87",
+      "title": "Phishing Example 87",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: HR portal update\nExample text: Important: the HR portal update document was shared with you. Review it and authenticate to continue.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-88",
+      "title": "Phishing Example 88",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: HR portal update\nExample text: Final warning: your HR portal update access expires today. Update credentials to avoid lockout.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-89",
+      "title": "Phishing Example 89",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: HR portal update\nExample text: The company security team needs you to confirm your HR portal update login right away.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-90",
+      "title": "Phishing Example 90",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: HR portal update\nExample text: Your payment related to HR portal update is blocked. Sign in and confirm your details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-91",
+      "title": "Phishing Example 91",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Tax form review\nExample text: Urgent: your Tax form review requires immediate action. Sign in now using this link and confirm your password.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-92",
+      "title": "Phishing Example 92",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Tax form review\nExample text: Your Tax form review will be suspended today unless you verify your credentials immediately.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-93",
+      "title": "Phishing Example 93",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Tax form review\nExample text: Open the attached file to resolve the Tax form review problem and log in when prompted.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-94",
+      "title": "Phishing Example 94",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Tax form review\nExample text: We detected unusual activity in your Tax form review. Re-enter your password and MFA code to secure it.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-95",
+      "title": "Phishing Example 95",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Tax form review\nExample text: A senior manager needs you to process the Tax form review request within 10 minutes and reply confidentially.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-96",
+      "title": "Phishing Example 96",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Tax form review\nExample text: Your Tax form review is pending. Use the secure portal below to verify account details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-97",
+      "title": "Phishing Example 97",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Tax form review\nExample text: Important: the Tax form review document was shared with you. Review it and authenticate to continue.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-98",
+      "title": "Phishing Example 98",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Tax form review\nExample text: Final warning: your Tax form review access expires today. Update credentials to avoid lockout.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-99",
+      "title": "Phishing Example 99",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Tax form review\nExample text: The company security team needs you to confirm your Tax form review login right away.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    },
+    {
+      "doc_key": "phishing-example-100",
+      "title": "Phishing Example 100",
+      "category": "phishing-examples",
+      "source_url": "",
+      "content": "Classification: Phishing\nScenario: Tax form review\nExample text: Your payment related to Tax form review is blocked. Sign in and confirm your details now.\nRed flags: urgency, credential request, unexpected link or attachment, pressure to bypass normal process."
+    }
+  ]
+}

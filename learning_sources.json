@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "name": "CISA Cybersecurity Advisories",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/all.xml",
+      "enabled": true
+    },
+    {
+      "name": "NIST NVD RSS",
+      "url": "https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml",
+      "enabled": true
+    }
+  ]
+}
